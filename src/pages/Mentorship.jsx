@@ -29,24 +29,21 @@ export default function Mentorship() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 relative">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
-        </div>
-        <div className="relative max-w-4xl mx-auto px-6">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+        <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">MENTORSHIP PROGRAM</p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">MENTORSHIP PROGRAM</p>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               Learn from people who've{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">
+              <span className="text-teal-600">
                 already built it.
               </span>
             </h1>
-            <p className="text-lg text-slate-400 leading-relaxed max-w-2xl">
+            <p className="text-lg text-slate-500 leading-relaxed max-w-2xl">
               Our mentors are operators, investors, and founders across Europe and beyond. 
               They don't lecture — they roll up their sleeves and help you build.
             </p>
@@ -55,7 +52,7 @@ export default function Mentorship() {
       </section>
 
       {/* How mentorship works */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {PILLARS.map((p, i) => (
@@ -65,13 +62,13 @@ export default function Mentorship() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/5"
+                className="p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100"
               >
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-5">
-                  <p.icon className="w-5 h-5 text-amber-400" />
+                <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-5">
+                  <p.icon className="w-5 h-5 text-teal-600" />
                 </div>
-                <h3 className="font-semibold mb-2">{p.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{p.desc}</p>
+                <h3 className="font-semibold mb-2 text-teal-900">{p.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{p.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -87,8 +84,8 @@ export default function Mentorship() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl font-bold tracking-tight mb-2">Our 2025 Mentors</h2>
-            <p className="text-slate-400">20+ vetted professionals ready to help you build.</p>
+            <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-2">Our 2025 Mentors</h2>
+            <p className="text-slate-500">20+ vetted professionals ready to help you build.</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -102,15 +99,15 @@ export default function Mentorship() {
       {/* CTA */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-4">
             Ready to get matched with a mentor?
           </h2>
-          <p className="text-slate-400 mb-8">
+          <p className="text-slate-500 mb-8">
             Apply to FoB and tell us what you're building. We'll connect you with the right person.
           </p>
           <Link 
             to="/Apply"
-            className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-amber-500/20 text-sm"
+            className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
           >
             Apply Now
             <ArrowRight className="w-4 h-4" />
