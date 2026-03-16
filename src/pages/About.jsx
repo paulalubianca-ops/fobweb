@@ -39,24 +39,21 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 relative">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
-        </div>
+      <section className="pt-32 pb-20 relative bg-gradient-to-br from-purple-50 via-white to-blue-50">
         <div className="relative max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">ABOUT FoB</p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">ABOUT FoB</p>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               We believe the next generation of founders{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">
+              <span className="text-teal-600">
                 deserves better access.
               </span>
             </h1>
-            <p className="text-lg text-slate-400 leading-relaxed max-w-2xl">
+            <p className="text-lg text-slate-500 leading-relaxed max-w-2xl">
               Friends of Bata is a mentorship-first community that bridges the gap between 
               academic environments and the real startup world — giving Gen Z founders the 
               networks, guidance, and practical exposure they need to build with confidence.
@@ -66,9 +63,8 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/30 to-transparent" />
-        <div className="relative max-w-6xl mx-auto px-6">
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -76,13 +72,13 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl font-bold tracking-tight mb-5">Our thesis is simple.</h2>
-              <p className="text-slate-400 leading-relaxed mb-4">
+              <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-5">Our thesis is simple.</h2>
+              <p className="text-slate-500 leading-relaxed mb-4">
                 Gen Z is the most entrepreneurial generation in history — but the infrastructure 
                 to support them hasn't caught up. Traditional accelerators want traction. University 
                 programs offer theory. Networking events are built for people with 20 years of experience.
               </p>
-              <p className="text-slate-300 leading-relaxed font-medium">
+              <p className="text-slate-700 leading-relaxed font-medium">
                 FoB exists in the gap. We provide what's missing: relatable mentorship, practical 
                 context, real connections, and a community that meets you where you are.
               </p>
@@ -120,16 +116,16 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl bg-white/[0.02] border border-white/5 p-10 md:p-14"
+            className="rounded-2xl bg-gradient-to-br from-teal-50 to-blue-50 border border-teal-100 p-10 md:p-14"
           >
-            <p className="text-slate-400 text-sm mb-8">
+            <p className="text-slate-600 text-sm mb-8">
               In 2025, our global network supported{' '}
               <span className="text-white font-semibold">130,000+ young people</span> in 
               improving their entrepreneurship skills through events, mentorship, and founder-facing content.
             </p>
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-600 text-sm">
               We use the UN's 17 Sustainable Development Goals as a framework — focusing on{' '}
-              <span className="text-white font-semibold">positive and sustainable entrepreneurship</span> as 
+              <span className="text-teal-800 font-semibold">positive and sustainable entrepreneurship</span> as 
               a force for good.
             </p>
           </motion.div>
@@ -145,8 +141,8 @@ export default function About() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">WHAT DRIVES US</p>
-            <h2 className="text-3xl font-bold tracking-tight">Our values.</h2>
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">WHAT DRIVES US</p>
+            <h2 className="text-3xl font-bold tracking-tight text-teal-900">Our values.</h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {VALUES.map((v, i) => (
@@ -156,10 +152,10 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="p-6 rounded-2xl bg-white/[0.02] border border-white/5"
+                className="p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100"
               >
-                <v.icon className="w-5 h-5 text-amber-400 mb-3" />
-                <h3 className="font-semibold text-sm mb-1">{v.title}</h3>
+                <v.icon className="w-5 h-5 text-teal-600 mb-3" />
+                <h3 className="font-semibold text-sm mb-1 text-teal-900">{v.title}</h3>
                 <p className="text-slate-500 text-xs leading-relaxed">{v.desc}</p>
               </motion.div>
             ))}
@@ -176,8 +172,8 @@ export default function About() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">THE TEAM</p>
-            <h2 className="text-3xl font-bold tracking-tight">The people behind FoB.</h2>
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THE TEAM</p>
+            <h2 className="text-3xl font-bold tracking-tight text-teal-900">The people behind FoB.</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -188,7 +184,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5"
+                className="group rounded-2xl overflow-hidden bg-white border border-purple-100 shadow-sm"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
@@ -198,9 +194,9 @@ export default function About() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-semibold mb-0.5">{member.name}</h3>
-                  <p className="text-amber-400 text-xs font-medium mb-2">{member.role}</p>
-                  <p className="text-slate-400 text-sm leading-relaxed mb-3">{member.bio}</p>
+                  <h3 className="font-semibold mb-0.5 text-teal-900">{member.name}</h3>
+                  <p className="text-teal-600 text-xs font-semibold mb-2">{member.role}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-3">{member.bio}</p>
                   <a 
                     href={member.linkedin} 
                     target="_blank" 
@@ -219,13 +215,13 @@ export default function About() {
       {/* CTA */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight mb-4">Ready to join?</h2>
-          <p className="text-slate-400 mb-8">
+          <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-4">Ready to join?</h2>
+          <p className="text-slate-500 mb-8">
             Whether you're building your first prototype or scaling a bold idea — we're here to help.
           </p>
           <Link 
             to="/Apply"
-            className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-amber-500/20 text-sm"
+            className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
           >
             Apply Now
             <ArrowRight className="w-4 h-4" />
