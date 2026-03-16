@@ -32,12 +32,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-teal-900"
         >
-          The mentorship network{' '}
+          Create.{' '}
           <br className="hidden sm:block" />
-          <span className="text-teal-600">
-            Gen Z founders
-          </span>{' '}
-          actually need.
+          Disrupt.{' '}
+          <br className="hidden sm:block" />
+          <span className="text-teal-600">Repeat!</span>
         </motion.h1>
 
         <motion.p
@@ -46,8 +45,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          You don't lack ambition. You lack access. FoB connects you with real operators, 
-          proven mentors, and a community that gets you from idea to traction.
+          We empower the next-gen of entrepreneurs with real-world experiences, startup challenges, 
+          and access to an international network of founders, experts, and like-minded builders.
         </motion.p>
 
         <motion.div
