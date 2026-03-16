@@ -27,14 +27,14 @@ export default function Navbar() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-slate-950/90 backdrop-blur-xl border-b border-white/5' : 'bg-transparent'
+        scrolled ? 'bg-white/90 backdrop-blur-xl shadow-sm border-b border-slate-100' : 'bg-transparent'
       }`}>
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/Home" className="flex items-center gap-2.5">
             <img 
               src="https://cdn.prod.website-files.com/6552207c5f7b80924e9ed66d/65aa4a01bdac923e99870eff_logo.png" 
               alt="Friends of Bata" 
-              className="h-8 brightness-0 invert"
+              className="h-8"
             />
           </Link>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                   href={link.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                  className="text-sm text-slate-600 hover:text-teal-700 transition-colors font-medium"
                 >
                   {link.label}
                 </a>
@@ -55,8 +55,8 @@ export default function Navbar() {
                 <Link 
                   key={link.label}
                   to={link.path} 
-                  className={`text-sm transition-colors ${
-                    location.pathname === link.path ? 'text-white' : 'text-slate-400 hover:text-white'
+                  className={`text-sm font-medium transition-colors ${
+                    location.pathname === link.path ? 'text-teal-700' : 'text-slate-600 hover:text-teal-700'
                   }`}
                 >
                   {link.label}
@@ -65,7 +65,7 @@ export default function Navbar() {
             ))}
             <Link 
               to="/Apply" 
-              className="text-sm font-medium bg-amber-500 hover:bg-amber-400 text-slate-950 px-5 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-amber-500/20"
+              className="text-sm font-semibold bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20"
             >
               Apply Now
             </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button 
-            className="md:hidden text-white p-2"
+            className="md:hidden text-slate-700 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -88,7 +88,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed inset-0 z-40 bg-slate-950/98 backdrop-blur-xl pt-20 px-6"
+            className="fixed inset-0 z-40 bg-white/98 backdrop-blur-xl pt-20 px-6"
           >
             <div className="flex flex-col gap-6">
               {NAV_LINKS.map((link) => (
@@ -98,7 +98,7 @@ export default function Navbar() {
                     href={link.href} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-2xl text-slate-300 hover:text-white transition-colors"
+                    className="text-2xl text-slate-700 hover:text-teal-700 transition-colors font-medium"
                   >
                     {link.label}
                   </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
                   <Link 
                     key={link.label}
                     to={link.path} 
-                    className="text-2xl text-slate-300 hover:text-white transition-colors"
+                    className="text-2xl text-slate-700 hover:text-teal-700 transition-colors font-medium"
                   >
                     {link.label}
                   </Link>
@@ -114,7 +114,7 @@ export default function Navbar() {
               ))}
               <Link 
                 to="/Apply" 
-                className="text-lg font-medium bg-amber-500 text-slate-950 px-6 py-3 rounded-full text-center mt-4"
+                className="text-lg font-semibold bg-teal-600 text-white px-6 py-3 rounded-full text-center mt-4"
               >
                 Apply Now
               </Link>

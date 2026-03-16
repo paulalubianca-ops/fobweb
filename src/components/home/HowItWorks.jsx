@@ -25,10 +25,8 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 md:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/30 to-slate-950" />
-
-      <div className="relative max-w-6xl mx-auto px-6">
+    <section className="py-24 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,8 +34,8 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">HOW IT WORKS</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">HOW IT WORKS</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
             From application to traction.
           </h2>
         </motion.div>
@@ -50,14 +48,14 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="relative p-8 rounded-2xl bg-white/[0.02] border border-white/5"
+              className="relative p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100"
             >
-              <span className="text-5xl font-bold text-white/[0.04] absolute top-6 right-6">{step.step}</span>
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-6">
-                <step.icon className="w-5 h-5 text-amber-400" />
+              <span className="text-5xl font-bold text-purple-100 absolute top-6 right-6">{step.step}</span>
+              <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-6">
+                <step.icon className="w-5 h-5 text-teal-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{step.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-teal-900">{step.title}</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">{step.description}</p>
             </motion.div>
           ))}
         </div>

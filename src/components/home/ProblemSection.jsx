@@ -27,10 +27,8 @@ const PROBLEMS = [
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 md:py-32 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950" />
-      
-      <div className="relative max-w-6xl mx-auto px-6">
+    <section className="py-24 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,11 +36,11 @@ export default function ProblemSection() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mb-16"
         >
-          <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">THE REALITY</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THE REALITY</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
             Gen Z founders face a different kind of problem.
           </h2>
-          <p className="text-slate-400 text-lg leading-relaxed">
+          <p className="text-slate-500 text-lg leading-relaxed">
             It's not a lack of ideas or ambition. It's a lack of access — to mentors, networks, 
             and the practical context that turns a student project into a real venture.
           </p>
@@ -56,13 +54,13 @@ export default function ProblemSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all"
+              className="group p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100 hover:border-teal-200 transition-all"
             >
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center mb-5">
-                <problem.icon className="w-5 h-5 text-amber-400" />
+              <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-5">
+                <problem.icon className="w-5 h-5 text-teal-600" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">{problem.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{problem.description}</p>
+              <h3 className="text-lg font-semibold mb-2 text-teal-900">{problem.title}</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">{problem.description}</p>
             </motion.div>
           ))}
         </div>

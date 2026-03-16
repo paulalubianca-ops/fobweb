@@ -32,7 +32,7 @@ const FEATURED_MENTORS = [
 
 export default function MentorshipSpotlight() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-gradient-to-br from-purple-50 via-white to-blue-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left — messaging */}
@@ -43,11 +43,11 @@ export default function MentorshipSpotlight() {
             transition={{ duration: 0.6 }}
             className="lg:sticky lg:top-32"
           >
-            <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">OUR FLAGSHIP</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-5">
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">OUR FLAGSHIP</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-5">
               Mentorship that actually moves the needle.
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed mb-6">
+            <p className="text-slate-500 text-lg leading-relaxed mb-6">
               Not generic office hours. Not a LinkedIn connection. Our mentors are operators, 
               investors, and founders who commit real time to helping you build.
             </p>
@@ -58,14 +58,14 @@ export default function MentorshipSpotlight() {
                 "A relationship, not a one-time call",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
-                  <p className="text-slate-300 text-sm">{item}</p>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0" />
+                  <p className="text-slate-600 text-sm">{item}</p>
                 </div>
               ))}
             </div>
             <Link 
               to="/Mentorship"
-              className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-800 text-sm font-semibold transition-colors"
             >
               Meet all 20+ mentors
               <ArrowRight className="w-4 h-4" />
@@ -81,7 +81,7 @@ export default function MentorshipSpotlight() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group relative overflow-hidden rounded-2xl bg-white/[0.02] border border-white/5 hover:border-amber-500/20 transition-all"
+                className="group relative overflow-hidden rounded-2xl bg-white border border-purple-100 hover:border-teal-300 shadow-sm hover:shadow-md transition-all"
               >
                 <div className="aspect-square overflow-hidden">
                   <img 
@@ -91,9 +91,9 @@ export default function MentorshipSpotlight() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-sm">{mentor.name}</h3>
+                  <h3 className="font-semibold text-sm text-teal-900">{mentor.name}</h3>
                   <p className="text-slate-500 text-xs mt-0.5">{mentor.role}</p>
-                  <span className="inline-block mt-2 text-xs px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400">
+                  <span className="inline-block mt-2 text-xs px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-100">
                     {mentor.expertise}
                   </span>
                 </div>

@@ -31,7 +31,7 @@ const EVENTS = [
 
 export default function SocialProof() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
         {/* Stats */}
         <motion.div
@@ -43,7 +43,7 @@ export default function SocialProof() {
         >
           {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">
+              <p className="text-3xl md:text-4xl font-bold text-teal-600">
                 {stat.value}
               </p>
               <p className="text-slate-500 text-sm mt-1">{stat.label}</p>
@@ -59,8 +59,8 @@ export default function SocialProof() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="text-amber-400 text-sm font-medium tracking-wide mb-3">IN ACTION</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">IN ACTION</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
             Real events. Real founders. Real outcomes.
           </h2>
         </motion.div>
@@ -73,7 +73,7 @@ export default function SocialProof() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-white/10 transition-all"
+              className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all"
             >
               <div className="aspect-video overflow-hidden">
                 <img 
@@ -83,9 +83,9 @@ export default function SocialProof() {
                 />
               </div>
               <div className="p-6">
-                <p className="text-xs text-amber-400 mb-2">{event.location}</p>
-                <h3 className="font-semibold mb-2">{event.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{event.description}</p>
+                <p className="text-xs text-teal-600 font-medium mb-2">{event.location}</p>
+                <h3 className="font-semibold text-teal-900 mb-2">{event.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{event.description}</p>
               </div>
             </motion.div>
           ))}
