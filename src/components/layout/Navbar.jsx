@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NAV_LINKS = [
   { label: 'About', path: '/About' },
   { label: 'Mentorship', path: '/Mentorship' },
-  { label: 'Podcast', href: 'https://www.friendsofbata.org/pitch-lab-podcast' },
+  { label: 'Podcast', path: '/Podcast' },
 ];
 
 export default function Navbar() {
