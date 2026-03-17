@@ -41,6 +41,7 @@ const AuthenticatedApp = () => {
         <Route path="/Mentorship" element={<Mentorship />} />
         <Route path="/Apply" element={<Apply />} />
         <Route path="/Podcast" element={<Podcast />} />
+        <Route path="/CaseStudies" element={<CaseStudies />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NAV_LINKS = [
   { label: 'About', path: '/About' },
   { label: 'Mentorship', path: '/Mentorship' },
-  { label: 'Mentorship', path: '/Mentorship' },
   { label: 'Case Studies', path: '/CaseStudies' },
   { label: 'Podcast', path: '/Podcast' },
 ];
