@@ -12,6 +12,7 @@ import About from './pages/About';
 import Mentorship from './pages/Mentorship';
 import Apply from './pages/Apply';
 import Podcast from './pages/Podcast';
+import CaseStudies from './pages/CaseStudies';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
