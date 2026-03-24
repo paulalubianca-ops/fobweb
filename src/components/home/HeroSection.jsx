@@ -45,9 +45,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-                  We connect the next-gen of entrepreneurs with real-world experiences, startup challenges, 
-          and access to an international network of founders, experts, and like-minded builders. of entrepreneurs with real-world experiences, startup challenges, 
-          and access to an international network of founders, experts, and like-minded builders.
+          Mentors. Networks. Real challenges. Everything Gen Z founders need — and nothing they don't.
         </motion.p>
 
         <motion.div
