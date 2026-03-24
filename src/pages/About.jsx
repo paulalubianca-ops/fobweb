@@ -20,7 +20,7 @@ const TEAM = [
   },
   {
     name: "Valentina Muller",
-    role: "Platform Lead",
+    role: "Co-founder & Progran Lead",
     bio: "Drives vision, content, and the Pitch Lab podcast.",
     image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e157a625f6400be8b40d9_1694598221628%20(1).jpeg",
     linkedin: "https://www.linkedin.com/in/valentinamueller/"
