@@ -65,7 +65,7 @@ export default function HeroSection() {
             to="/Mentorship" 
             className="inline-flex items-center justify-center gap-2 border border-teal-300 hover:border-teal-500 text-teal-700 hover:text-teal-800 bg-white/60 backdrop-blur-sm px-8 py-3.5 rounded-full transition-all text-sm font-medium"
           >
-            Explore Mentorship
+            Founders Club
           </Link>
         </motion.div>
 
