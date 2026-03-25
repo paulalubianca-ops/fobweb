@@ -21,6 +21,8 @@ const FOUNDERS = [
   { name: "Nicolas Freudiger", role: "Co-Founder & CEO - ID Genève", bio: "Entrepreneur and circular economy advocate. Background at Coca-Cola HBC, LVMH, and EHL.", image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6852a8af76ec47625e2a76d7_1539600609016.jpeg", linkedin: "https://www.linkedin.com/in/nicolas-freudiger-9a684a31/" },
   { name: "Cédric Mulhauser", role: "Watchmaker & Co-Founder - ID Genève", bio: "Master watchmaker with deep technical expertise from Vacheron Constantin and Emile Chouriet.", image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6852a921aa41f6bbf384d5d8_1701374292316.jpeg", linkedin: "https://www.linkedin.com/in/c%C3%A9dric-mulhauser-856749122/" },
   { name: "Vincent Borel", role: "CEO - Equip Sport", bio: "Tech leader redefining access to sports through circular, sustainable models. Career spanning Nestlé and Logitech.", image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/68fb81683ebff1362df3f808_1661130112270.jpeg", linkedin: "https://www.linkedin.com/in/vborel/" },
+  { name: "Roger Espasa", role: "Co-Founder - Onepercent", bio: "Founded onepercent, a healthtech project born to turn health and habits into measurable and repeatable results through points and gamification.", image: "", linkedin: "https://www.linkedin.com/in/rogerespasamarco/" },
+  { name: "Gonzalo Comella", role: "Founder - Liseners", bio: "Entrepreneur specialized in B2C business models, building Liseners — a subscription platform that links individuals with experienced people for guidance and support.", image: "", linkedin: "https://www.linkedin.com/in/gonzalocomella/" },
 ];
 
 export default function FoundersClub() {
