@@ -31,20 +31,14 @@ export default function Mentorship() {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-blue-50">
         <div className="max-w-4xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">FOUNDERS CLUB</p>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">MENTORSHIP</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               Learn from people who've{' '}
-              <span className="text-teal-600">
-                already built it.
-              </span>
+              <span className="text-teal-600">already built it.</span>
             </h1>
             <p className="text-lg text-slate-500 leading-relaxed max-w-2xl">
-              Our mentors are operators, investors, and founders across Europe and beyond. 
+              Our mentors are operators, investors, and founders across Europe and beyond.
               They don't lecture — they roll up their sleeves and help you build.
             </p>
           </motion.div>
@@ -78,16 +72,10 @@ export default function Mentorship() {
       {/* Mentor grid */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-2">Our 2025 Mentors</h2>
             <p className="text-slate-500">20+ vetted professionals ready to help you build.</p>
           </motion.div>
-
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {MENTORS.map((mentor, i) => (
               <MentorCard key={mentor.name} mentor={mentor} index={i} />
@@ -99,16 +87,9 @@ export default function Mentorship() {
       {/* CTA */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-4">
-            Ready to get matched with a mentor?
-          </h2>
-          <p className="text-slate-500 mb-8">
-            Apply to FoB and tell us what you're building. We'll connect you with the right person.
-          </p>
-          <Link 
-            to="/Apply"
-            className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
-          >
+          <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-4">Ready to get matched with a mentor?</h2>
+          <p className="text-slate-500 mb-8">Apply to FoB and tell us what you're building. We'll connect you with the right person.</p>
+          <Link to="/Apply" className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm">
             Apply Now
             <ArrowRight className="w-4 h-4" />
           </Link>
