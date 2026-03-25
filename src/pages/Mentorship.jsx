@@ -73,7 +73,7 @@ export default function Mentorship() {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-2">Our 2025 Mentors</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-2">Our Mentors</h2>
             <p className="text-slate-500">20+ vetted professionals ready to help you build.</p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
