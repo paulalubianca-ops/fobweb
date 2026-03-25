@@ -13,6 +13,8 @@ import OurCommunity from './pages/OurCommunity';
 import Apply from './pages/Apply';
 import Podcast from './pages/Podcast';
 import CaseStudies from './pages/CaseStudies';
+import Mentorship from './pages/Mentorship';
+import FoundersClub from './pages/FoundersClub';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
