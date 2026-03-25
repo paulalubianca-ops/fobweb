@@ -36,7 +36,7 @@ export default function Mentorship() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">MENTORSHIP PROGRAM</p>
+            <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">FOUNDERS CLUB</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               Learn from people who've{' '}
               <span className="text-teal-600">
