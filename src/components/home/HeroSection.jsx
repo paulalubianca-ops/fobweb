@@ -45,7 +45,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Mentors. Networks. Real challenges. Everything Gen Z founders need — and nothing they don't.
+          Friends of Bata is an entrepreneurship community for students and young builders. — and nothing they don't.
         </motion.p>
 
         <motion.div
