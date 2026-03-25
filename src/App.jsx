@@ -13,6 +13,7 @@ import Mentorship from './pages/Mentorship';
 import Apply from './pages/Apply';
 import Podcast from './pages/Podcast';
 import CaseStudies from './pages/CaseStudies';
+import FoundersClub from './pages/FoundersClub';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -39,6 +40,7 @@ const AuthenticatedApp = () => {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Mentorship" element={<Mentorship />} />
+        <Route path="/FoundersClub" element={<FoundersClub />} />
         <Route path="/Apply" element={<Apply />} />
         <Route path="/Podcast" element={<Podcast />} />
         <Route path="/CaseStudies" element={<CaseStudies />} />
