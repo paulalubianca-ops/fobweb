@@ -7,19 +7,19 @@ const STEPS = [
     icon: Send,
     step: "01",
     title: "Apply",
-    description: "Tell us about your idea, your stage, and what you're looking for. No pitch deck required — just honesty."
+    description: "Tell us who you are and what you're building. No pitch deck, no traction required. Just show up with an idea and a drive to build."
   },
   {
     icon: UserCheck,
     step: "02",
-    title: "Get Matched",
-    description: "We pair you with a mentor who's actually relevant to your challenge — not a random connection, a strategic one."
+    title: "Join the Community",
+    description: "Get access to our network of Gen Z founders, operators, and partners. A community that's at your stage — not five years ahead of it."
   },
   {
     icon: Rocket,
     step: "03",
-    title: "Build & Grow",
-    description: "Access events, workshops, case studies, and a community of founders your age who are building too."
+    title: "Attend Events & Programs",
+    description: "Participate in innovation sprints, live masterclasses, workshops, and case study sessions — built to give you practical context and real connections."
   }
 ];
 
@@ -36,7 +36,7 @@ export default function HowItWorks() {
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">HOW IT WORKS</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
-            From application to traction.
+            Apply. Join. Build.
           </h2>
         </motion.div>
 

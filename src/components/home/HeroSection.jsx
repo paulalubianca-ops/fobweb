@@ -32,11 +32,11 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-teal-900"
         >
-          Create.{' '}
+          The community{' '}
           <br className="hidden sm:block" />
-          Disrupt.{' '}
+          built for{' '}
           <br className="hidden sm:block" />
-          <span className="text-teal-600">Repeat!</span>
+          <span className="text-teal-600">Gen Z founders.</span>
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Friends of Bata is an entrepreneurship community for students and young builders.
+          Events, masterclasses, and programs designed to give Gen Z founders the access, context, and community they don't find anywhere else.
         </motion.p>
 
         <motion.div
@@ -58,14 +58,14 @@ export default function HeroSection() {
             to="/Apply" 
             className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/30 text-sm"
           >
-            Apply to Join
+            Apply for Our Programs
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link 
-                        to="/OurCommunity" 
+            to="/About"
             className="inline-flex items-center justify-center gap-2 border border-teal-300 hover:border-teal-500 text-teal-700 hover:text-teal-800 bg-white/60 backdrop-blur-sm px-8 py-3.5 rounded-full transition-all text-sm font-medium"
           >
-                        Mentorship
+            Who we are
           </Link>
         </motion.div>
 
@@ -76,7 +76,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-20 pt-12 border-t border-purple-200/50"
         >
-          <p className="text-xs text-slate-400 uppercase tracking-widest mb-6">Partnered with</p>
+          <p className="text-xs text-slate-400 uppercase tracking-widest mb-6">Active at</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
             <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6911f0f176679762610ef895_EHL_Logo.png" alt="EHL" className="h-8" />
             <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff3082887af64e2308f48_UoE_Stacked%20Logo_CMYK_v1_160215.png" alt="University of Edinburgh" className="h-10" />

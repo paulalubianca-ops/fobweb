@@ -5,23 +5,23 @@ import { GraduationCap, Users, Lightbulb, Globe } from 'lucide-react';
 const PROBLEMS = [
   {
     icon: Users,
-    title: "No access to real networks",
-    description: "Traditional founder networks are built for people with decades of experience. If you're 20 and building, you're invisible."
+    title: "Locked out of real networks",
+    description: "Traditional founder networks are built for people with decades of experience and warm intros. If you're 22 and building, you're invisible to them."
   },
   {
     icon: GraduationCap,
-    title: "Too much theory, not enough practice",
-    description: "University teaches frameworks. It doesn't teach you how to close your first customer or survive a failed launch."
+    title: "More theory than reality",
+    description: "Universities teach frameworks. They don't teach you how to pitch, how to close your first customer, or how to survive a failed launch."
   },
   {
     icon: Lightbulb,
-    title: "Mentors who don't get your stage",
-    description: "You don't need a keynote speaker. You need someone who remembers what it felt like to build from zero."
+    title: "No context for your stage",
+    description: "Generic startup advice is everywhere. What's rare is practical context from someone who's actually been at zero — and knows what your stage actually needs."
   },
   {
     icon: Globe,
-    title: "Isolated from the global ecosystem",
-    description: "The best opportunities happen in rooms you're not in yet. FoB puts you in those rooms — across Europe and beyond."
+    title: "Missing the rooms that matter",
+    description: "The best opportunities happen in rooms you haven't been invited to yet. FoB puts you in those rooms — events, sprints, and programs across Europe and beyond."
   }
 ];
 
@@ -38,11 +38,11 @@ export default function ProblemSection() {
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THE REALITY</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
-            Gen Z founders face a different kind of problem.
+            Gen Z founders don't have a talent problem. They have an access problem.
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
-            It's not a lack of ideas or ambition. It's a lack of access — to mentors, networks, 
-            and the practical context that turns a student project into a real venture.
+            The ecosystem wasn't built for you. Accelerators want traction. Investors want networks. 
+            Events aren't designed for your stage. FoB was built specifically to close that gap.
           </p>
         </motion.div>
 

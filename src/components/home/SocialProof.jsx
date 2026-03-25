@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const STATS = [
   { value: "130K+", label: "Students in our network" },
+  { value: "50+", label: "Events & workshops run" },
   { value: "20+", label: "Active mentors" },
-  { value: "50+", label: "Events & workshops" },
-  { value: "15+", label: "Case studies launched" },
+  { value: "15+", label: "Case studies published" },
 ];
 
 const EVENTS = [
@@ -61,7 +63,7 @@ export default function SocialProof() {
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">IN ACTION</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
-            Real events. Real founders. Real outcomes.
+            See what happens when you're in the room.
           </h2>
         </motion.div>
 
@@ -90,6 +92,22 @@ export default function SocialProof() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 text-center"
+        >
+          <Link
+            to="/Apply"
+            className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
+          >
+            Apply to join our next event
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+          <p className="text-xs text-slate-400 mt-3">Free to apply · Open to students and recent graduates</p>
+        </motion.div>
       </div>
     </section>
   );

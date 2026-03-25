@@ -19,23 +19,23 @@ export default function FinalCTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Stop waiting for permission{' '}
+            Your next opportunity{' '}
             <span className="text-teal-300">
-              to build.
+              starts here.
             </span>
           </h2>
           <p className="text-lg text-teal-100 leading-relaxed mb-10 max-w-xl mx-auto">
-            The gap between your idea and a real venture isn't talent — it's access. 
-            FoB gives you the mentors, the community, and the push to make it real.
+            Events, masterclasses, and a community of Gen Z founders building across Europe. 
+            The access you've been looking for is one application away.
           </p>
           <Link 
             to="/Apply"
             className="inline-flex items-center gap-2 bg-white hover:bg-teal-50 text-teal-800 font-semibold px-8 py-4 rounded-full transition-all hover:shadow-lg text-sm"
           >
-            Apply to Join FoB
+            Apply for Our Programs
             <ArrowRight className="w-4 h-4" />
           </Link>
-          <p className="text-xs text-teal-300 mt-4">Free to apply · Open to students and recent grads</p>
+          <p className="text-xs text-teal-300 mt-4">Free to apply · Open to students and recent graduates</p>
         </motion.div>
       </div>
     </section>
