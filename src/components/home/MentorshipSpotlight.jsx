@@ -64,7 +64,7 @@ export default function MentorshipSpotlight() {
               ))}
             </div>
             <Link 
-              to="/Mentorship"
+                            to="/OurCommunity"
               className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-800 text-sm font-semibold transition-colors"
             >
               Meet all 20+ mentors

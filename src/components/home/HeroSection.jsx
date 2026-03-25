@@ -62,7 +62,7 @@ export default function HeroSection() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link 
-            to="/Mentorship" 
+                        to="/OurCommunity" 
             className="inline-flex items-center justify-center gap-2 border border-teal-300 hover:border-teal-500 text-teal-700 hover:text-teal-800 bg-white/60 backdrop-blur-sm px-8 py-3.5 rounded-full transition-all text-sm font-medium"
           >
                         Mentorship
