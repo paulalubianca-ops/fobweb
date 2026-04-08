@@ -16,7 +16,7 @@ const SECTIONS = [
       'Brand visibility across events and content',
       'Access to Gen Z founder talent pipeline',
       'Co-created workshops and activations',
-      'Speaking and mentorship opportunities',
+
     ],
     cta: 'Partner With Us',
     ctaLink: '/Apply',
