@@ -75,7 +75,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-white/60 text-xs font-semibold tracking-[0.2em] uppercase mb-6">Community · Mentorship · Programs</p>
+
         </motion.div>
 
         <motion.h1
