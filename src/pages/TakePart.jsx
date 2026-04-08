@@ -12,7 +12,7 @@ const SECTIONS = [
     description:
       'Partner with FoB to bring entrepreneurship programs to your teams, sponsor events, or co-create content with our community of Gen Z founders across Europe.',
     details: [
-      'Custom sponsorship & partnership packages',
+      'Custom partnership packages',
       'Brand visibility across events and content',
       'Access to Gen Z founder talent pipeline',
       'Co-created workshops and activations',
