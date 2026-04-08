@@ -1,30 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Building2, University, TrendingUp, ArrowRight, Megaphone } from 'lucide-react';
+import { Building2, University, TrendingUp, ArrowRight, Megaphone } from 'lucide-react';
 
 const SECTIONS = [
-  {
-    id: 'students',
-    icon: GraduationCap,
-    label: 'Students',
-    headline: 'Get a taste of Entrepreneurship.',
-    description:
-      'Access mentorship, masterclasses, case studies, and a community of Gen Z builders who are actually building. Apply for free and start your founder journey today.',
-    details: [
-      'Free to apply — open to all students',
-      'Mentorship from vetted founders & operators',
-      'Full access to case studies and masterclasses',
-      'Private community of Gen Z builders',
-      'Events, workshops, and networking opportunities',
-    ],
-    cta: 'Apply Now',
-    ctaLink: '/Apply',
-    accent: 'from-teal-50 to-blue-50',
-    border: 'border-teal-200',
-    iconBg: 'bg-teal-100 text-teal-600',
-    activeTab: 'bg-teal-600 text-white border-teal-600',
-  },
   {
     id: 'organizations',
     icon: Building2,
@@ -114,7 +93,7 @@ const SECTIONS = [
 ];
 
 export default function TakePart() {
-  const [active, setActive] = useState('students');
+  const [active, setActive] = useState('organizations');
   const section = SECTIONS.find((s) => s.id === active);
   const Icon = section.icon;
 
