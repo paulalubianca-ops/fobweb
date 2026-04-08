@@ -13,13 +13,8 @@ const NAV_LINKS = [
       { label: 'Mentorship', path: '/Mentorship' },
     ],
   },
-  {
-    label: 'Programs',
-    dropdown: [
-      { label: 'Case Studies', path: '/CaseStudies' },
-      { label: 'Podcast', path: '/Podcast' },
-    ],
-  },
+  { label: 'Case Studies', path: '/CaseStudies' },
+  { label: 'Podcast', path: '/Podcast' },
   { label: 'Take Part', path: '/TakePart' },
 ];
 
