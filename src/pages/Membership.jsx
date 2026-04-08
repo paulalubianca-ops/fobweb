@@ -13,7 +13,7 @@ const TIERS = [
     features: [
       'Full podcast access',
       'Lite business case studies',
-      'Core Masterclasses (short sessions),'
+      'Snippets of Masterclasses',
     ],
     ctaText: 'Start for Free',
     ctaLink: '/Apply',
