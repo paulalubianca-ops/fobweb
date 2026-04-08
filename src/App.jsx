@@ -14,6 +14,7 @@ import Apply from './pages/Apply';
 import Podcast from './pages/Podcast';
 import CaseStudies from './pages/CaseStudies';
 import Experts from './pages/Experts';
+import Students from './pages/Students';
 import TakePart from './pages/TakePart';
 
 const AuthenticatedApp = () => {
@@ -42,6 +43,7 @@ const AuthenticatedApp = () => {
         <Route path="/About" element={<About />} />
         <Route path="/OurCommunity" element={<OurCommunity />} />
         <Route path="/Experts" element={<Experts />} />
+        <Route path="/Students" element={<Students />} />
         <Route path="/Apply" element={<Apply />} />
         <Route path="/TakePart" element={<TakePart />} />
         <Route path="/Podcast" element={<Podcast />} />
