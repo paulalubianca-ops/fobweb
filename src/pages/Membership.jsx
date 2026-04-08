@@ -44,29 +44,12 @@ const TIERS = [
     features: [
       'Everything in Builder, plus:',
       'Private community (founders + peers)',
-      'Monthly live mentor Q&A sessions',
+      'Schedule mentorship calls with our Community',
       'Curated networking opportunities',
       'Priority access to events',
       'Opportunity to pitch ideas / get feedback',
     ],
     ctaText: 'Upgrade to Insider',
-    ctaLink: '/Apply',
-  },
-  {
-    name: 'The Circle',
-    tagline: 'Proximity to experience.',
-    price: '€79',
-    period: '/ month',
-    dotColor: 'bg-red-600',
-    features: [
-      'Everything in Insider, plus:',
-      'Small-group mentoring sessions',
-      'Hands-on workshops (execution-focused)',
-      'Personalized feedback on projects/ideas',
-      'Access to exclusive founder roundtables',
-      'Featured visibility (spotlight members)',
-    ],
-    ctaText: 'Apply for The Circle',
     ctaLink: '/Apply',
   },
 ];
@@ -91,7 +74,7 @@ export default function Membership() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             {TIERS.map((tier, i) => (
               <PricingTier key={tier.name} tier={tier} index={i} featured={tier.featured} />
             ))}
