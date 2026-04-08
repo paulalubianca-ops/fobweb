@@ -119,7 +119,7 @@ export default function Navbar() {
                   : 'bg-white text-slate-900 hover:bg-white/90'
               }`}
             >
-              Apply Now
+              Join us!
             </Link>
           </div>
 
@@ -177,7 +177,7 @@ export default function Navbar() {
                 to="/Apply"
                 className="text-lg font-semibold bg-teal-600 text-white px-6 py-3 rounded-full text-center mt-4"
               >
-                Apply Now
+                Join us!
               </Link>
             </div>
           </motion.div>
