@@ -20,7 +20,7 @@ const NAV_LINKS = [
       { label: 'Podcast', path: '/Podcast' },
     ],
   },
-  { label: 'Membership', path: '/Membership' },
+  { label: 'Take Part', path: '/TakePart' },
 ];
 
 function DropdownItem({ link, scrolled }) {
