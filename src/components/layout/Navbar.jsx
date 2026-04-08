@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: 'Community', path: '/OurCommunity' },
   { label: 'Case Studies', path: '/CaseStudies' },
   { label: 'Podcast', path: '/Podcast' },
+  { label: 'Membership', path: '/Membership' },
 ];
 
 export default function Navbar() {
