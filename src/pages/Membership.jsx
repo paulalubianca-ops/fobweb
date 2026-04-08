@@ -13,8 +13,7 @@ const TIERS = [
     features: [
       'Full podcast access',
       'Lite business case studies',
-      'Core Masterclasses (short sessions)',
-      'Newsletter + curated opportunities',
+      'Core Masterclasses (short sessions),'
     ],
     ctaText: 'Start for Free',
     ctaLink: '/Apply',
@@ -48,6 +47,7 @@ const TIERS = [
       'Curated networking opportunities',
       'Priority access to events',
       'Opportunity to pitch ideas / get feedback',
+      'Newsletter + curated opportunities',
     ],
     ctaText: 'Upgrade to Insider',
     ctaLink: '/Apply',
