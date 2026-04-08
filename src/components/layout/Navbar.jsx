@@ -8,9 +8,7 @@ const NAV_LINKS = [
   {
     label: 'Community',
     dropdown: [
-      { label: 'Our Community', path: '/OurCommunity' },
-      { label: 'Founders Club', path: '/FoundersClub' },
-      { label: 'Mentorship', path: '/Mentorship' },
+      { label: 'Experts', path: '/Experts' },
     ],
   },
   { label: 'Case Studies', path: '/CaseStudies' },

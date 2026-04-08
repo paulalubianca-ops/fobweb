@@ -13,8 +13,7 @@ import OurCommunity from './pages/OurCommunity';
 import Apply from './pages/Apply';
 import Podcast from './pages/Podcast';
 import CaseStudies from './pages/CaseStudies';
-import Mentorship from './pages/Mentorship';
-import FoundersClub from './pages/FoundersClub';
+import Experts from './pages/Experts';
 import TakePart from './pages/TakePart';
 
 const AuthenticatedApp = () => {
@@ -42,8 +41,7 @@ const AuthenticatedApp = () => {
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/OurCommunity" element={<OurCommunity />} />
-        <Route path="/Mentorship" element={<Mentorship />} />
-        <Route path="/FoundersClub" element={<FoundersClub />} />
+        <Route path="/Experts" element={<Experts />} />
         <Route path="/Apply" element={<Apply />} />
         <Route path="/TakePart" element={<TakePart />} />
         <Route path="/Podcast" element={<Podcast />} />
