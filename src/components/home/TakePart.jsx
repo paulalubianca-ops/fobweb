@@ -8,7 +8,7 @@ const PATHS = [
     id: 'students',
     icon: GraduationCap,
     label: 'Students',
-    headline: 'Start your founder journey.',
+    headline: 'Get a taste of Entrepreneurship',
     description:
       'Access mentorship, masterclasses, case studies, and a community of Gen Z builders who are actually building. Apply for free.',
     cta: 'Apply Now',
