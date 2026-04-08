@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Building2, University, TrendingUp, ArrowRight } from 'lucide-react';
+import { GraduationCap, Building2, University, TrendingUp, ArrowRight, Megaphone } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -67,6 +67,28 @@ const SECTIONS = [
     border: 'border-blue-200',
     iconBg: 'bg-blue-100 text-blue-600',
     activeTab: 'bg-blue-600 text-white border-blue-600',
+  },
+  {
+    id: 'sponsors',
+    icon: Megaphone,
+    label: 'Sponsor Our Events',
+    headline: 'Put your brand at the heart of Gen Z entrepreneurship.',
+    description:
+      'Our events bring together the most ambitious Gen Z founders in Europe. Sponsoring a FoB event means direct, authentic access to a highly engaged audience of builders and future leaders.',
+    details: [
+      'Logo placement across all event materials',
+      'Speaking slot or panel participation',
+      'Direct access to attendees and founders',
+      'Social media visibility and content features',
+      'Custom activation opportunities on-site',
+    ],
+    cta: 'Become a Sponsor',
+    ctaLink: 'mailto:partnerships@friendsofbata.com',
+    external: true,
+    accent: 'from-rose-50 to-orange-50',
+    border: 'border-rose-200',
+    iconBg: 'bg-rose-100 text-rose-600',
+    activeTab: 'bg-rose-500 text-white border-rose-500',
   },
   {
     id: 'investors',
