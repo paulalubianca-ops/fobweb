@@ -1,49 +1,65 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Original site pastel gradient background */}
+      {/* Dark cinematic background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-purple-200/50 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-blue-200/40 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-pink-200/30 rounded-full blur-3xl" />
+        <img
+          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
+      {/* Floating social icons — right side */}
+      <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-10">
+        {[
+          { icon: Instagram, href: 'https://instagram.com/friendsofbata' },
+          { icon: Youtube, href: 'https://youtube.com/@friendsofbata' },
+          { icon: Linkedin, href: 'https://linkedin.com/company/friends-of-bata' },
+        ].map(({ icon: Icon, href }) => (
+          <a
+            key={href}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all"
+          >
+            <Icon className="w-4 h-4" />
+          </a>
+        ))}
+      </div>
+
+      <div className="relative max-w-5xl mx-auto px-6 pt-24 pb-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/60 border border-purple-200 mb-8 backdrop-blur-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-            <span className="text-xs text-slate-600 tracking-wide">130,000+ students supported globally</span>
-          </div>
+          <p className="text-white/60 text-xs font-semibold tracking-[0.2em] uppercase mb-6">Community · Mentorship · Programs</p>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-teal-900"
+          className="text-5xl sm:text-6xl md:text-8xl font-bold leading-none tracking-tight mb-8 text-white uppercase"
         >
-          The community{' '}
-          <br className="hidden sm:block" />
-          built for{' '}
-          <br className="hidden sm:block" />
-          <span className="text-teal-600">Gen Z founders.</span>
+          The community<br />
+          built for<br />
+          <span className="text-teal-400">Gen Z founders.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed"
         >
           Events, masterclasses, and programs designed to give Gen Z founders the access, context, and community they don't find anywhere else.
         </motion.p>
@@ -52,18 +68,17 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4"
         >
-          <Link 
-            to="/Apply" 
-            className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/30 text-sm"
+          <Link
+            to="/Apply"
+            className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-3.5 rounded-full transition-all hover:bg-white/90 text-sm tracking-wide uppercase"
           >
-            Apply for Our Programs
-            <ArrowRight className="w-4 h-4" />
+            Join the Ecosystem
           </Link>
-          <Link 
+          <Link
             to="/About"
-            className="inline-flex items-center justify-center gap-2 border border-teal-300 hover:border-teal-500 text-teal-700 hover:text-teal-800 bg-white/60 backdrop-blur-sm px-8 py-3.5 rounded-full transition-all text-sm font-medium"
+            className="inline-flex items-center justify-center gap-2 border border-white/40 hover:border-white text-white px-8 py-3.5 rounded-full transition-all text-sm font-medium"
           >
             Who we are
           </Link>
@@ -74,15 +89,15 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mt-20 pt-12 border-t border-purple-200/50"
+          className="mt-20 pt-10 border-t border-white/15"
         >
-          <p className="text-xs text-slate-400 uppercase tracking-widest mb-6">Active at</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6911f0f176679762610ef895_EHL_Logo.png" alt="EHL" className="h-8" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff3082887af64e2308f48_UoE_Stacked%20Logo_CMYK_v1_160215.png" alt="University of Edinburgh" className="h-10" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff953f8acb7b6e95352e5_geneva-logo.webp" alt="Geneva Business School" className="h-8" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6941378b091e74a8be0c1c01_GTA%20LOGO.png" alt="Garage Tech Academy" className="h-8" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/688cbefcced78070f25ff145_aticcolab-pos.png" alt="Aticco Lab" className="h-7" />
+          <p className="text-xs text-white/40 uppercase tracking-widest mb-6">Active at</p>
+          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6911f0f176679762610ef895_EHL_Logo.png" alt="EHL" className="h-7 brightness-0 invert opacity-50" />
+            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff3082887af64e2308f48_UoE_Stacked%20Logo_CMYK_v1_160215.png" alt="University of Edinburgh" className="h-9 brightness-0 invert opacity-50" />
+            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff953f8acb7b6e95352e5_geneva-logo.webp" alt="Geneva Business School" className="h-7 brightness-0 invert opacity-50" />
+            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6941378b091e74a8be0c1c01_GTA%20LOGO.png" alt="Garage Tech Academy" className="h-7 brightness-0 invert opacity-50" />
+            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/688cbefcced78070f25ff145_aticcolab-pos.png" alt="Aticco Lab" className="h-6 brightness-0 invert opacity-50" />
           </div>
         </motion.div>
       </div>
