@@ -1,18 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Instagram, Youtube, Linkedin } from 'lucide-react';
 
+const BG_IMAGES = [
+  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80",
+  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1800&q=80",
+  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1800&q=80",
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1800&q=80",
+];
+
+const PARTNERS = [
+  { src: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6911f0f176679762610ef895_EHL_Logo.png", alt: "EHL" },
+  { src: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff3082887af64e2308f48_UoE_Stacked%20Logo_CMYK_v1_160215.png", alt: "University of Edinburgh" },
+  { src: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff953f8acb7b6e95352e5_geneva-logo.webp", alt: "Geneva Business School" },
+  { src: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6941378b091e74a8be0c1c01_GTA%20LOGO.png", alt: "Garage Tech Academy" },
+  { src: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/688cbefcced78070f25ff145_aticcolab-pos.png", alt: "Aticco Lab" },
+];
+
 export default function HeroSection() {
+  const [bgIndex, setBgIndex] = useState(0);
+  const [partnerIndex, setPartnerIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex(i => (i + 1) % BG_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPartnerIndex(i => (i + 1) % PARTNERS.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Dark cinematic background */}
+      {/* Dark cinematic background slideshow */}
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80"
-          alt=""
-          className="w-full h-full object-cover"
-        />
+        {BG_IMAGES.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === bgIndex ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
@@ -92,12 +126,20 @@ export default function HeroSection() {
           className="mt-20 pt-10 border-t border-white/15"
         >
           <p className="text-xs text-white/40 uppercase tracking-widest mb-6">Active at</p>
-          <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6911f0f176679762610ef895_EHL_Logo.png" alt="EHL" className="h-7 brightness-0 invert opacity-50" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff3082887af64e2308f48_UoE_Stacked%20Logo_CMYK_v1_160215.png" alt="University of Edinburgh" className="h-9 brightness-0 invert opacity-50" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aff953f8acb7b6e95352e5_geneva-logo.webp" alt="Geneva Business School" className="h-7 brightness-0 invert opacity-50" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6941378b091e74a8be0c1c01_GTA%20LOGO.png" alt="Garage Tech Academy" className="h-7 brightness-0 invert opacity-50" />
-            <img src="https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/688cbefcced78070f25ff145_aticcolab-pos.png" alt="Aticco Lab" className="h-6 brightness-0 invert opacity-50" />
+          <div className="flex items-center gap-8 md:gap-12 overflow-hidden">
+            {PARTNERS.map((partner, i) => {
+              const pos = (i - partnerIndex + PARTNERS.length) % PARTNERS.length;
+              return (
+                <img
+                  key={partner.alt}
+                  src={partner.src}
+                  alt={partner.alt}
+                  className={`h-7 brightness-0 invert transition-all duration-700 shrink-0 ${
+                    pos === 0 ? 'opacity-80 scale-110' : 'opacity-30 scale-100'
+                  }`}
+                />
+              );
+            })}
           </div>
         </motion.div>
       </div>
