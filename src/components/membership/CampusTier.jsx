@@ -21,7 +21,7 @@ export default function CampusTier() {
     >
       <div className="w-3 h-3 rounded-full bg-red-400 mb-5" />
 
-      <h3 className="text-xl font-bold text-teal-900 mb-1">Bata Campus</h3>
+      <h3 className="text-xl font-bold text-teal-900 mb-1">Friends of Bata Campus</h3>
       <p className="text-sm text-slate-400 italic mb-6">"Turning universities into entrepreneurial ecosystems."</p>
 
 
