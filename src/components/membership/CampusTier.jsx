@@ -4,11 +4,11 @@ import { Check, Mail } from 'lucide-react';
 
 export default function CampusTier() {
   const features = [
-    '🎓 Full Builder/Insider access for students',
-    '🧭 Structured learning paths (plug into curriculum)',
-    '🎤 Guest mentor sessions',
-    '📜 Certificates (huge for employability)',
-    '🚀 Startup showcase opportunities',
+    'Full Builder/Insider access for students',
+    'Structured learning paths (plug into curriculum)',
+    'Guest mentor sessions',
+    'Certificates (huge for employability)',
+    'Startup showcase opportunities',
   ];
 
   return (
@@ -24,13 +24,7 @@ export default function CampusTier() {
       <h3 className="text-xl font-bold text-teal-900 mb-1">Bata Campus</h3>
       <p className="text-sm text-slate-400 italic mb-6">"Turning universities into entrepreneurial ecosystems."</p>
 
-      <div className="mb-6 pb-6 border-b border-purple-100">
-        <p className="text-sm text-slate-500 font-semibold mb-2">Institutional Pricing:</p>
-        <ul className="space-y-1 text-sm text-slate-600">
-          <li>💰 <span className="font-medium">Per Student:</span> €15–25 / month</li>
-          <li>💰 <span className="font-medium">Annual License:</span> €8,000 – €25,000 / year</li>
-        </ul>
-      </div>
+
 
       <ul className="space-y-3 mb-8 flex-1">
         {features.map((feature) => (
