@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Building2, TrendingUp, ArrowRight } from 'lucide-react';
+import { GraduationCap, Building2, ArrowRight } from 'lucide-react';
 
 const PATHS = [
   {
@@ -28,18 +28,6 @@ const PATHS = [
     accent: 'from-purple-50 to-pink-50 border-purple-100',
     iconBg: 'bg-purple-100 text-purple-600',
   },
-  {
-    id: 'investors',
-    icon: TrendingUp,
-    label: 'Investors',
-    headline: 'Meet your next deal.',
-    description:
-      'Get early access to Gen Z founders building in Europe. Join our network and connect directly with ambitious entrepreneurs at the earliest stage.',
-    cta: 'Join the Network',
-    ctaLink: '/Apply',
-    accent: 'from-orange-50 to-yellow-50 border-orange-100',
-    iconBg: 'bg-orange-100 text-orange-600',
-  },
 ];
 
 export default function TakePart() {
@@ -58,12 +46,12 @@ export default function TakePart() {
             Find your place in the ecosystem.
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            Whether you're building, investing, or enabling — there's a role for you in the FoB ecosystem.
+            Whether you're building or enabling — there's a role for you in the FoB ecosystem.
           </p>
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {PATHS.map((path, i) => (
             <motion.div
               key={path.id}
