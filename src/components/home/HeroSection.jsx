@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Instagram, Youtube, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const HERO_IMAGES = [
   "https://media.base44.com/images/public/69b84f0f01a311431532ce14/7174e6de7_Robertantonphoto-7791.jpg",
@@ -32,25 +32,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 overflow-hidden" aria-label="Hero">
 
-      {/* Floating social icons — right side */}
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20 hidden md:flex">
-        {[
-          { icon: Instagram, href: 'https://instagram.com/friendsofbata', label: 'Follow us on Instagram' },
-          { icon: Youtube, href: 'https://youtube.com/@friendsofbata', label: 'Watch us on YouTube' },
-          { icon: Linkedin, href: 'https://linkedin.com/company/friends-of-bata', label: 'Connect on LinkedIn' },
-        ].map(({ icon: Icon, href, label }) => (
-          <a
-            key={href}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={label}
-            className="w-9 h-9 rounded-full bg-white/60 hover:bg-white border border-white/60 flex items-center justify-center text-teal-700 transition-all shadow-sm"
-          >
-            <Icon className="w-4 h-4" aria-hidden="true" />
-          </a>
-        ))}
-      </div>
+
 
       {/* Main content */}
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-16 min-h-screen flex flex-col justify-center">
@@ -89,6 +71,20 @@ export default function HeroSection() {
               >
                 Who we are
               </Link>
+            </div>
+
+            {/* Social icons */}
+            <div className="flex items-center gap-3 mt-5">
+              <a href="https://linkedin.com/company/friends-of-bata" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn"
+                className="w-9 h-9 rounded-full bg-white/70 hover:bg-white border border-teal-200 flex items-center justify-center text-teal-700 transition-all shadow-sm">
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a href="https://www.tiktok.com/@friendsofbata" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"
+                className="w-9 h-9 rounded-full bg-white/70 hover:bg-white border border-teal-200 flex items-center justify-center text-teal-700 transition-all shadow-sm">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+                </svg>
+              </a>
             </div>
 
             {/* Trust bar */}
