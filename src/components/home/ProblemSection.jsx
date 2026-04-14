@@ -38,7 +38,7 @@ export default function ProblemSection() {
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">YOU BELONG HERE IF…</p>
           <h2 id="problem-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
-            You're one of us.
+            You've got the drive. We've got the community.
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
             Friends of Bata is a launchpad for student founders — where ideas get tested, ventures grow, and real connections happen. Through events, content, podcasts, and startup challenges, we help young builders learn by doing.
