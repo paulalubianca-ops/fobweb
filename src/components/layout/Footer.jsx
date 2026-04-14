@@ -16,7 +16,7 @@ export default function Footer() {
               className="h-8 brightness-0 invert mb-4"
             />
             <p className="text-teal-200 text-sm leading-relaxed max-w-sm">
-              The mentorship-first community for Gen Z founders who are ready to build, not just learn.
+              The mentorship-first community for Gen Z who are ready to build, not just learn.
             </p>
           </div>
 
