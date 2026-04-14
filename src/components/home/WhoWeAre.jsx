@@ -23,7 +23,7 @@ const TABS = [
     icon: Briefcase,
     headline: 'Operators, investors, and builders.',
     description:
-      'We connect students with top international experts in business, management, HR, and strategy. Our mentors don\'t lecture — they roll up their sleeves, share real playbooks, and provide mentorship that fosters genuine entrepreneurial growth and success.',
+      'We connect students with top international experts in business, management, and strategy. Our mentors don\'t lecture — they roll up their sleeves, share real playbooks, and provide mentorship that fosters genuine entrepreneurial growth and success.',
     stats: [
       { value: '20+', label: 'Vetted mentors' },
       { value: '10+', label: 'Industries covered' },
