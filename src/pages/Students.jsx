@@ -38,7 +38,7 @@ export default function Students() {
               to="/Apply"
               className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
             >
-              Apply for Free
+              Join Us!
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>

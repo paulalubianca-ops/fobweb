@@ -185,7 +185,7 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-3">Ready to join?</h2>
           <p className="text-slate-500 mb-8">From first prototype to real traction — we're here to help.</p>
           <Link to="/Apply" className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm">
-            Apply Now
+            Join Us!
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
