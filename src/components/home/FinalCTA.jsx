@@ -21,7 +21,7 @@ export default function FinalCTA() {
           <h2 id="cta-heading" className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
             Ready to Join{' '}
             <span className="text-teal-300">
-              the Network?
+              Friends of Bata?
             </span>
           </h2>
           <p className="text-lg text-teal-100 leading-relaxed mb-4 max-w-xl mx-auto">
