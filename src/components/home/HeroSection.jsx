@@ -81,7 +81,7 @@ export default function HeroSection() {
                 to="/Apply"
                 className="inline-flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-bold px-8 py-3.5 rounded-full transition-all text-sm tracking-wide shadow-lg shadow-teal-500/20"
               >
-                Join Our Community 💡
+                Join Us!
               </Link>
               <Link
                 to="/About"

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, Users, Mic, Calendar } from 'lucide-react';
+import ReviewsSection from '../components/shared/ReviewsSection';
 
 const BENEFITS = [
   { icon: BookOpen, title: "Case Studies & Masterclasses", desc: "Dive into real startup stories and frameworks from founders who've been in the trenches." },
@@ -103,8 +104,10 @@ export default function Students() {
         </div>
       </section>
 
+      <ReviewsSection bg="bg-gradient-to-br from-purple-50 via-white to-blue-50" />
+
       {/* Who it's for */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+      <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">WHO IT'S FOR</p>

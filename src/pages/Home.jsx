@@ -6,6 +6,7 @@ import TakePart from '../components/home/TakePart';
 import EventsSpotlight from '../components/home/EventsSpotlight';
 import HowItWorks from '../components/home/HowItWorks';
 import SocialProof from '../components/home/SocialProof';
+import ReviewsSection from '../components/shared/ReviewsSection';
 import FinalCTA from '../components/home/FinalCTA';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <EventsSpotlight />
       <HowItWorks />
       <SocialProof />
+      <ReviewsSection bg="bg-white" />
       <FinalCTA />
     </>
   );
