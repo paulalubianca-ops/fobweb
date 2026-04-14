@@ -15,7 +15,7 @@ const BENEFITS = [
 const STATS = [
   { value: '130K+', label: 'Students supported globally' },
   { value: '30+', label: 'Universities active' },
-  { value: '5', label: 'Countries represented' },
+  { value: '20+', label: 'Countries represented' },
   { value: '€0', label: 'Cost to apply' },
 ];
 
