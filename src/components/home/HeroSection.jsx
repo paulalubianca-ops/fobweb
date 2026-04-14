@@ -37,14 +37,15 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
       {/* Dark cinematic background slideshow */}
       <div className="absolute inset-0">
         <AnimatePresence mode="wait">
           <motion.img
             key={bgIndex}
             src={BG_IMAGES[bgIndex]}
-            alt=""
+            alt={`Friends of Bata event photo ${bgIndex + 1}`}
+            loading="lazy"
             initial={{ opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
@@ -57,24 +58,29 @@ export default function HeroSection() {
         {/* Prev / Next arrows */}
         <button
           onClick={() => setBgIndex(i => (i - 1 + BG_IMAGES.length) % BG_IMAGES.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 border border-white/20 flex items-center justify-center text-white transition-all"
+          aria-label="Previous image"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white border border-white/20 flex items-center justify-center text-white transition-all"
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-5 h-5" aria-hidden="true" />
         </button>
         <button
           onClick={() => setBgIndex(i => (i + 1) % BG_IMAGES.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 border border-white/20 flex items-center justify-center text-white transition-all"
+          aria-label="Next image"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white border border-white/20 flex items-center justify-center text-white transition-all"
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-5 h-5" aria-hidden="true" />
         </button>
 
         {/* Dot indicators */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2" role="tablist" aria-label="Slideshow navigation">
           {BG_IMAGES.map((_, i) => (
             <button
               key={i}
+              role="tab"
+              aria-selected={i === bgIndex}
+              aria-label={`Go to slide ${i + 1}`}
               onClick={() => setBgIndex(i)}
-              className={`w-2 h-2 rounded-full transition-all ${i === bgIndex ? 'bg-white w-5' : 'bg-white/40'}`}
+              className={`w-2 h-2 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${i === bgIndex ? 'bg-white w-5' : 'bg-white/40'}`}
             />
           ))}
         </div>
@@ -83,18 +89,19 @@ export default function HeroSection() {
       {/* Floating social icons — right side */}
       <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-10">
         {[
-          { icon: Instagram, href: 'https://instagram.com/friendsofbata' },
-          { icon: Youtube, href: 'https://youtube.com/@friendsofbata' },
-          { icon: Linkedin, href: 'https://linkedin.com/company/friends-of-bata' },
-        ].map(({ icon: Icon, href }) => (
+          { icon: Instagram, href: 'https://instagram.com/friendsofbata', label: 'Follow us on Instagram' },
+          { icon: Youtube, href: 'https://youtube.com/@friendsofbata', label: 'Watch us on YouTube' },
+          { icon: Linkedin, href: 'https://linkedin.com/company/friends-of-bata', label: 'Connect on LinkedIn' },
+        ].map(({ icon: Icon, href, label }) => (
           <a
             key={href}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all"
+            aria-label={label}
+            className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white border border-white/20 flex items-center justify-center text-white transition-all"
           >
-            <Icon className="w-4 h-4" />
+            <Icon className="w-4 h-4" aria-hidden="true" />
           </a>
         ))}
       </div>
@@ -155,8 +162,8 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-20 pt-10 border-t border-white/15"
         >
-          <p className="text-xs text-white/40 uppercase tracking-widest mb-6">Active at</p>
-          <div className="flex items-center gap-8 md:gap-12 overflow-hidden">
+          <p className="text-xs text-white/40 uppercase tracking-widest mb-6" id="partners-label">Active at</p>
+          <div className="flex items-center gap-8 md:gap-12 overflow-hidden" role="list" aria-labelledby="partners-label">
             {PARTNERS.map((partner, i) => {
               const pos = (i - partnerIndex + PARTNERS.length) % PARTNERS.length;
               return (
@@ -164,6 +171,8 @@ export default function HeroSection() {
                   key={partner.alt}
                   src={partner.src}
                   alt={partner.alt}
+                  loading="lazy"
+                  role="listitem"
                   className={`h-7 brightness-0 invert transition-all duration-700 shrink-0 ${
                     pos === 0 ? 'opacity-80 scale-110' : 'opacity-30 scale-100'
                   }`}

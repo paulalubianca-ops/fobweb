@@ -27,7 +27,7 @@ const PROBLEMS = [
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white" aria-labelledby="problem-heading">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function ProblemSection() {
           className="max-w-2xl mb-16"
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THE REALITY</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
+          <h2 id="problem-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
             Gen Z founders don't have a talent problem. They have an access problem.
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
@@ -46,9 +46,9 @@ export default function ProblemSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 list-none p-0">
           {PROBLEMS.map((problem, i) => (
-            <motion.div
+            <motion.li
               key={problem.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -56,14 +56,14 @@ export default function ProblemSection() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100 hover:border-teal-200 transition-all"
             >
-              <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-5">
+              <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-5" aria-hidden="true">
                 <problem.icon className="w-5 h-5 text-teal-600" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-teal-900">{problem.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">{problem.description}</p>
-            </motion.div>
+            </motion.li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-teal-900 text-white">
+    <footer className="bg-teal-900 text-white" aria-label="Site footer">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <img 
               src="https://cdn.prod.website-files.com/6552207c5f7b80924e9ed66d/65aa4a01bdac923e99870eff_logo.png" 
-              alt="Friends of Bata" 
+              alt="Friends of Bata logo"
+              loading="lazy"
+              width="auto"
+              height="32"
               className="h-8 brightness-0 invert mb-4"
             />
             <p className="text-teal-200 text-sm leading-relaxed max-w-sm">
@@ -17,7 +20,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          <nav aria-label="Footer navigation">
             <h4 className="text-xs font-semibold text-teal-300 uppercase tracking-wider mb-4">Navigate</h4>
             <div className="flex flex-col gap-3">
               <Link to="/Home" className="text-sm text-teal-200 hover:text-white transition-colors">Home</Link>
@@ -25,16 +28,16 @@ export default function Footer() {
               <Link to="/Mentorship" className="text-sm text-teal-200 hover:text-white transition-colors">Mentorship</Link>
               <Link to="/Apply" className="text-sm text-teal-200 hover:text-white transition-colors">Apply</Link>
             </div>
-          </div>
+          </nav>
 
-          <div>
+          <nav aria-label="Social links">
             <h4 className="text-xs font-semibold text-teal-300 uppercase tracking-wider mb-4">Connect</h4>
             <div className="flex flex-col gap-3">
-              <a href="https://www.linkedin.com/company/friends-of-bata/" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">LinkedIn</a>
-              <a href="https://www.instagram.com/friendsofbata/" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">Instagram</a>
-              <a href="https://www.friendsofbata.org/pitch-lab-podcast" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">Pitch Lab Podcast</a>
+              <a href="https://www.linkedin.com/company/friends-of-bata/" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">LinkedIn<span className="sr-only"> (opens in new tab)</span></a>
+              <a href="https://www.instagram.com/friendsofbata/" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">Instagram<span className="sr-only"> (opens in new tab)</span></a>
+              <a href="https://www.friendsofbata.org/pitch-lab-podcast" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-200 hover:text-white transition-colors">Pitch Lab Podcast<span className="sr-only"> (opens in new tab)</span></a>
             </div>
-          </div>
+          </nav>
         </div>
 
         <div className="border-t border-teal-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">

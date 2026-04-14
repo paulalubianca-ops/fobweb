@@ -38,7 +38,7 @@ export default function WhoWeAre() {
   const tab = TABS.find((t) => t.id === active);
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" aria-labelledby="who-we-are-heading">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -48,24 +48,28 @@ export default function WhoWeAre() {
           className="mb-12"
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-2">WHO WE ARE</p>
-          <h2 className="text-4xl font-bold tracking-tight text-teal-900">
+          <h2 id="who-we-are-heading" className="text-4xl font-bold tracking-tight text-teal-900">
             A community built on two pillars.
           </h2>
         </motion.div>
 
         {/* Tab switcher */}
-        <div className="flex gap-2 mb-10">
+        <div className="flex gap-2 mb-10" role="tablist" aria-label="Community sections">
           {TABS.map((t) => (
             <button
               key={t.id}
+              role="tab"
+              aria-selected={active === t.id}
+              aria-controls={`tabpanel-${t.id}`}
+              id={`tab-${t.id}`}
               onClick={() => setActive(t.id)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border ${
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-500 ${
                 active === t.id
                   ? 'bg-teal-600 text-white border-teal-600 shadow-md shadow-teal-500/20'
                   : 'bg-white text-slate-600 border-slate-200 hover:border-teal-300'
               }`}
             >
-              <t.icon className="w-4 h-4" />
+              <t.icon className="w-4 h-4" aria-hidden="true" />
               {t.label}
             </button>
           ))}
@@ -75,6 +79,9 @@ export default function WhoWeAre() {
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
+            id={`tabpanel-${active}`}
+            role="tabpanel"
+            aria-labelledby={`tab-${active}`}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -99,7 +106,8 @@ export default function WhoWeAre() {
             <div className="rounded-2xl overflow-hidden aspect-[4/3]">
               <img
                 src={tab.image}
-                alt={tab.label}
+                alt={`${tab.headline} – Friends of Bata`}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

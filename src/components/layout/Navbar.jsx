@@ -74,14 +74,16 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      <nav aria-label="Main navigation" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled ? 'bg-white/95 backdrop-blur-xl shadow-sm border-b border-slate-100' : 'bg-transparent'
       }`}>
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link to="/Home" className="flex items-center gap-2.5">
+          <Link to="/Home" className="flex items-center gap-2.5" aria-label="Friends of Bata – Home">
             <img
               src="https://cdn.prod.website-files.com/6552207c5f7b80924e9ed66d/65aa4a01bdac923e99870eff_logo.png"
-              alt="Friends of Bata"
+              alt="Friends of Bata logo"
+              width="auto"
+              height="32"
               className={`h-8 transition-all ${scrolled ? '' : 'brightness-0 invert'}`}
             />
           </Link>
@@ -119,10 +121,13 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className={`md:hidden p-2 ${scrolled ? 'text-slate-700' : 'text-white'}`}
+            className={`md:hidden p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-500 rounded ${scrolled ? 'text-slate-700' : 'text-white'}`}
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
           >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Menu className="w-5 h-5" aria-hidden="true" />}
           </button>
         </div>
       </nav>
@@ -131,6 +136,10 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation menu"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

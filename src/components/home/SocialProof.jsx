@@ -33,7 +33,7 @@ const EVENTS = [
 
 export default function SocialProof() {
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section className="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-purple-50" aria-labelledby="social-proof-heading">
       <div className="max-w-6xl mx-auto px-6">
         {/* Stats */}
         <motion.div
@@ -45,10 +45,10 @@ export default function SocialProof() {
         >
           {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-3xl md:text-4xl font-bold text-teal-600">
+              <p className="text-3xl md:text-4xl font-bold text-teal-600" aria-label={`${stat.value} ${stat.label}`}>
                 {stat.value}
               </p>
-              <p className="text-slate-500 text-sm mt-1">{stat.label}</p>
+              <p className="text-slate-500 text-sm mt-1" aria-hidden="true">{stat.label}</p>
             </div>
           ))}
         </motion.div>
@@ -62,7 +62,7 @@ export default function SocialProof() {
           className="mb-12"
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">IN ACTION</p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
+          <h2 id="social-proof-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
             See what happens when you're in the room.
           </h2>
         </motion.div>
@@ -81,6 +81,7 @@ export default function SocialProof() {
                 <img 
                   src={event.image} 
                   alt={event.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>

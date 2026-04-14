@@ -32,7 +32,7 @@ const EVENTS = [
 
 export default function EventsSpotlight() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white" aria-labelledby="events-heading">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left — messaging */}
@@ -44,7 +44,7 @@ export default function EventsSpotlight() {
             className="lg:sticky lg:top-32"
           >
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">EVENTS & PROGRAMS</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-5">
+            <h2 id="events-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-5">
               The rooms you actually want to be in.
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed mb-6">
@@ -73,9 +73,9 @@ export default function EventsSpotlight() {
           </motion.div>
 
           {/* Right — event cards */}
-          <div className="space-y-4">
+          <ul className="space-y-4 list-none p-0">
             {EVENTS.map((event, i) => (
-              <motion.div
+              <motion.li
                 key={event.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export default function EventsSpotlight() {
                 className="group flex gap-4 p-4 rounded-2xl bg-white border border-purple-100 hover:border-teal-300 shadow-sm hover:shadow-md transition-all"
               >
                 <div className="w-24 h-20 rounded-xl overflow-hidden shrink-0">
-                  <img src={event.image} alt={event.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={event.image} alt={event.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -94,9 +94,9 @@ export default function EventsSpotlight() {
                   <h3 className="font-semibold text-sm text-teal-900 mb-1">{event.title}</h3>
                   <p className="text-slate-500 text-xs leading-relaxed line-clamp-2">{event.desc}</p>
                 </div>
-              </motion.div>
+              </motion.li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>

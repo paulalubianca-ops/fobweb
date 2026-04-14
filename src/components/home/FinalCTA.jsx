@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-br from-teal-800 to-teal-900">
+    <section className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-br from-teal-800 to-teal-900" aria-labelledby="cta-heading">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-600/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
@@ -18,7 +18,7 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
+          <h2 id="cta-heading" className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
             Your next opportunity{' '}
             <span className="text-teal-300">
               starts here.
