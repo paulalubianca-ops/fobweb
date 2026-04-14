@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Instagram, Youtube, Linkedin } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Instagram, Youtube, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const BG_IMAGES = [
   "https://media.base44.com/images/public/69b84f0f01a311431532ce14/7174e6de7_Robertantonphoto-7791.jpg",
@@ -40,15 +40,44 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Dark cinematic background slideshow */}
       <div className="absolute inset-0">
-        {BG_IMAGES.map((src, i) => (
-          <img
-            key={src}
-            src={src}
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={bgIndex}
+            src={BG_IMAGES[bgIndex]}
             alt=""
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === bgIndex ? 'opacity-100' : 'opacity-0'}`}
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 w-full h-full object-cover"
           />
-        ))}
+        </AnimatePresence>
         <div className="absolute inset-0 bg-black/60" />
+
+        {/* Prev / Next arrows */}
+        <button
+          onClick={() => setBgIndex(i => (i - 1 + BG_IMAGES.length) % BG_IMAGES.length)}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 border border-white/20 flex items-center justify-center text-white transition-all"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={() => setBgIndex(i => (i + 1) % BG_IMAGES.length)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/30 hover:bg-black/50 border border-white/20 flex items-center justify-center text-white transition-all"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+
+        {/* Dot indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {BG_IMAGES.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setBgIndex(i)}
+              className={`w-2 h-2 rounded-full transition-all ${i === bgIndex ? 'bg-white w-5' : 'bg-white/40'}`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Floating social icons — right side */}
