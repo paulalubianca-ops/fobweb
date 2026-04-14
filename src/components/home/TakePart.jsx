@@ -15,7 +15,7 @@ const UPCOMING_EVENTS = [
 
 export default function TakePart() {
   return (
-    <section className="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-purple-50" aria-labelledby="next-event-heading">
+    <section className="py-12 bg-gradient-to-br from-blue-50 via-white to-purple-50" aria-labelledby="next-event-heading">
       <div className="max-w-6xl mx-auto px-6">
 
         <motion.div
@@ -23,7 +23,7 @@ export default function TakePart() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-6"
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">NEXT EVENT</p>
           <h2 id="next-event-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
@@ -70,7 +70,7 @@ export default function TakePart() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-10 text-center"
+          className="mt-6 text-center"
         >
           <Link
             to="/Apply"
