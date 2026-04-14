@@ -114,7 +114,7 @@ export default function Students() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">WHO IT'S FOR</p>
             <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-5">
-              You don't need to be a founder yet.
+              You don't need to be a founder. You just need to be curious.
             </h2>
             <p className="text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
               FoB is open to Gen Z students and recent graduates across Europe who are curious about entrepreneurship and ready to take the first step. We meet you where you are.
