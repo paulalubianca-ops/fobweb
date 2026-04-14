@@ -4,24 +4,24 @@ import { GraduationCap, Users, Lightbulb, Globe } from 'lucide-react';
 
 const PROBLEMS = [
   {
+    icon: Lightbulb,
+    title: "Has a startup idea or early-stage project",
+    description: "You have an idea — maybe even a prototype. You don't need a pitch deck or traction to get started. Just show up ready to build."
+  },
+  {
     icon: Users,
-    title: "Locked out of real networks",
-    description: "Traditional founder networks are built for people with decades of experience and warm intros. If you're 22 and building, you're invisible to them."
+    title: "Wants to meet other young founders",
+    description: "Build real relationships with peers who are at the same stage, facing the same challenges, and building real things — not just networking for the sake of it."
   },
   {
     icon: GraduationCap,
-    title: "More theory than reality",
-    description: "Universities teach frameworks. They don't teach you how to pitch, how to close your first customer, or how to survive a failed launch."
-  },
-  {
-    icon: Lightbulb,
-    title: "No context for your stage",
-    description: "Generic startup advice is everywhere. What's rare is practical context from someone who's actually been at zero — and knows what your stage actually needs."
+    title: "Is looking for honest feedback, not just theory",
+    description: "Universities teach frameworks. FoB connects you with operators and founders who give you real, actionable feedback based on lived experience."
   },
   {
     icon: Globe,
-    title: "Missing the rooms that matter",
-    description: "The best opportunities happen in rooms you haven't been invited to yet. FoB puts you in those rooms — events, sprints, and programs across Europe and beyond."
+    title: "Values practical learning based on real challenges",
+    description: "Startup Challenges, Founder Q&As, Podcast Sessions, Pitch Events, and Real Case Study Debates — built to help you learn by doing."
   }
 ];
 
@@ -36,13 +36,12 @@ export default function ProblemSection() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mb-16"
         >
-          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THE REALITY</p>
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">THIS IS FOR YOU IF…</p>
           <h2 id="problem-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-4">
-            Gen Z founders don't have a talent problem. They have an access problem.
+            You're a student or recent grad who:
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
-            The ecosystem wasn't built for you. Accelerators want traction. Investors want networks. 
-            Events aren't designed for your stage. FoB was built specifically to close that gap.
+            Friends of Bata is a launchpad for student founders — where ideas get tested, ventures grow, and real connections happen. Through events, content, podcasts, and startup challenges, we help young builders learn by doing.
           </p>
         </motion.div>
 

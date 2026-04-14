@@ -9,11 +9,11 @@ const TABS = [
     icon: GraduationCap,
     headline: 'The next generation of founders.',
     description:
-      'We are Gen Z students and recent graduates from universities across Europe — curious, ambitious, and building real things. FoB is where we find our people, sharpen our ideas, and turn ambition into action.',
+      'We are Gen Z students and recent graduates from universities across Europe — curious, ambitious, and building real things. FoB is where we find our people, sharpen our ideas, and turn ambition into action. In 2025, our global network supported 130,000+ young people in improving their entrepreneurship skills.',
     stats: [
       { value: '130K+', label: 'Students supported globally' },
       { value: '30+', label: 'Universities active' },
-      { value: '5', label: 'Countries represented' },
+      { value: '5+', label: 'Countries represented' },
     ],
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
   },
@@ -23,7 +23,7 @@ const TABS = [
     icon: Briefcase,
     headline: 'Operators, investors, and builders.',
     description:
-      'Our expert community consists of seasoned founders, investors, and industry operators from across Europe and beyond. They don\'t lecture — they roll up their sleeves, share real playbooks, and commit to helping the next generation build.',
+      'We connect students with top international experts in business, management, HR, and strategy. Our mentors don\'t lecture — they roll up their sleeves, share real playbooks, and provide mentorship that fosters genuine entrepreneurial growth and success.',
     stats: [
       { value: '20+', label: 'Vetted mentors' },
       { value: '10+', label: 'Industries covered' },
@@ -47,9 +47,9 @@ export default function WhoWeAre() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-2">WHO WE ARE</p>
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-2">WHAT WE DO</p>
           <h2 id="who-we-are-heading" className="text-4xl font-bold tracking-tight text-teal-900">
-            A community built on two pillars.
+            We empower the next generation of entrepreneurs.
           </h2>
         </motion.div>
 

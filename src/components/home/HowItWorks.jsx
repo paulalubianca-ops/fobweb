@@ -6,20 +6,20 @@ const STEPS = [
   {
     icon: Send,
     step: "01",
-    title: "Apply",
-    description: "Tell us who you are and what you're building. No pitch deck, no traction required. Just show up with an idea and a drive to build."
+    title: "Startup Challenges & Pitch Events",
+    description: "Test your ideas against real challenges, pitch in front of founders and experts, and get the kind of honest feedback that actually moves you forward."
   },
   {
     icon: UserCheck,
     step: "02",
-    title: "Join the Community",
-    description: "Get access to our network of Gen Z founders, operators, and partners. A community that's at your stage — not five years ahead of it."
+    title: "Founder Q&As & Masterclasses",
+    description: "Get direct access to operators and investors through live sessions, online masterclasses, and intimate Q&As built around your questions."
   },
   {
     icon: Rocket,
     step: "03",
-    title: "Attend Events & Programs",
-    description: "Participate in innovation sprints, live masterclasses, workshops, and case study sessions — built to give you practical context and real connections."
+    title: "Real Case Study Debates",
+    description: "Explore real startup stories, debate the decisions, and meet the founders behind them. Practical context from people who've actually been at zero."
   }
 ];
 
@@ -34,10 +34,13 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">HOW IT WORKS</p>
+          <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">EVENTS</p>
           <h2 id="how-it-works-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
-            Apply. Join. Build.
+            Learn by doing — online and in person.
           </h2>
+          <p className="text-slate-500 mt-4 max-w-2xl mx-auto">
+            We host a mix of online and offline gatherings where young entrepreneurs connect, co-create, and challenge each other.
+          </p>
         </motion.div>
 
         <ol className="grid grid-cols-1 md:grid-cols-3 gap-8 list-none p-0">

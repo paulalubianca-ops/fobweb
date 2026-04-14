@@ -121,18 +121,27 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-5xl sm:text-6xl md:text-8xl font-bold leading-none tracking-tight mb-8 text-white uppercase"
         >
-          The community<br />
-          built for<br />
-          <span className="text-teal-400">Gen Z founders.</span>
+          Create.<br />
+          Disrupt.<br />
+          <span className="text-teal-400">Repeat!</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-white/70 max-w-2xl mb-4 leading-relaxed"
         >
-          Events, masterclasses, and programs designed to give Gen Z founders the access, context, and community they don't find anywhere else.
+          We empower the next-gen of entrepreneurs with real-world experiences, startup challenges, and access to an international network of founders, experts, and like-minded builders.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.25 }}
+          className="text-base md:text-lg text-white/50 italic max-w-xl mb-10 leading-relaxed"
+        >
+          Validate your ideas, build connections, and grow with us!
         </motion.p>
 
         <motion.div
@@ -145,7 +154,7 @@ export default function HeroSection() {
             to="/Apply"
             className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-3.5 rounded-full transition-all hover:bg-white/90 text-sm tracking-wide uppercase"
           >
-            Join the Ecosystem
+            Join Our Community 💡
           </Link>
           <Link
             to="/About"
@@ -162,7 +171,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-20 pt-10 border-t border-white/15"
         >
-          <p className="text-xs text-white/40 uppercase tracking-widest mb-6" id="partners-label">Active at</p>
+          <p className="text-xs text-white/40 uppercase tracking-widest mb-6" id="partners-label">Trusted by students at</p>
           <div className="flex items-center gap-8 md:gap-12 overflow-hidden" role="list" aria-labelledby="partners-label">
             {PARTNERS.map((partner, i) => {
               const pos = (i - partnerIndex + PARTNERS.length) % PARTNERS.length;

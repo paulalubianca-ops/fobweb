@@ -12,21 +12,21 @@ const STATS = [
 
 const EVENTS = [
   {
-    title: "EHL Innovation Sprint",
+    title: "Founders of Tomorrow Q1 2026 at the BCN Finance Hub",
+    location: "Barcelona, Spain",
+    description: "Friends of Bata co-hosted Founders of Tomorrow at Aticco BFH in Barcelona, bringing together 50+ students from 15+ nationalities for a one-day, hands-on entrepreneurship experience focused on building, pitching, and real founder feedback.",
+    image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69c668f5d0797c2eae3bbbcf_7575.JPG",
+  },
+  {
+    title: "Friends of Bata × EHL Innovation Sprint",
     location: "Lausanne, Switzerland",
-    description: "Students from five Swiss institutions collaborated in a 24-hour innovation challenge at the EHL Innovation Hub.",
+    description: "Friends of Bata joined the EHL Innovation Sprint at the EHL Innovation Hub in Lausanne, where students from five Swiss institutions collaborated in a 24-hour innovation challenge.",
     image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aeccd6865322352d600c93_1772567922553.jpeg",
   },
   {
-    title: "Founders of Tomorrow",
-    location: "Toulouse, France",
-    description: "A full-day hands-on entrepreneurship experience with Junior Achievement Alumni France.",
-    image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69a6c93d66fbec21e3ecd9eb_Screenshot%202026-03-03%20at%2012.42.43.png",
-  },
-  {
-    title: "Live with Yoseyomo",
+    title: "From Case Study to Founder: Live with Yoseyomo",
     location: "Online",
-    description: "Students explored a real Web3 case study, then met the co-founder live to challenge and question.",
+    description: "Students from Tomas Bata University explored the Yoseyomo case study and then met co-founder Iñaki Zubeldia in a live online session to challenge, question, and dive deeper into building a Web3 company.",
     image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6995d68bdc0fbdf6d741f323_Screenshot%202026-02-18%20at%2016.00.58.png",
   },
 ];
@@ -63,7 +63,7 @@ export default function SocialProof() {
         >
           <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">IN ACTION</p>
           <h2 id="social-proof-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900">
-            See what happens when you're in the room.
+            Recent Events
           </h2>
         </motion.div>
 
@@ -104,7 +104,7 @@ export default function SocialProof() {
             to="/Apply"
             className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
           >
-            Apply to join our next event
+            Join Our Community 💡
             <ArrowRight className="w-4 h-4" />
           </Link>
           <p className="text-xs text-slate-400 mt-3">Free to apply · Open to students and recent graduates</p>

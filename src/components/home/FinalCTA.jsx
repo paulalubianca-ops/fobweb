@@ -19,20 +19,22 @@ export default function FinalCTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 id="cta-heading" className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Your next opportunity{' '}
+            Ready to Join{' '}
             <span className="text-teal-300">
-              starts here.
+              the Network?
             </span>
           </h2>
-          <p className="text-lg text-teal-100 leading-relaxed mb-10 max-w-xl mx-auto">
-            Events, masterclasses, and a community of Gen Z founders building across Europe. 
-            The access you've been looking for is one application away.
+          <p className="text-lg text-teal-100 leading-relaxed mb-4 max-w-xl mx-auto">
+            Whether you're building your first prototype or scaling a bold idea — we're here to help you test, grow, and connect.
+          </p>
+          <p className="text-base text-teal-200/70 leading-relaxed mb-10 max-w-xl mx-auto">
+            Get in touch and participate in our upcoming events, submit your startup, or just say hi. Let's build something together!
           </p>
           <Link 
             to="/Apply"
             className="inline-flex items-center gap-2 bg-white hover:bg-teal-50 text-teal-800 font-semibold px-8 py-4 rounded-full transition-all hover:shadow-lg text-sm"
           >
-            Apply for Our Programs
+            Join Us
             <ArrowRight className="w-4 h-4" />
           </Link>
           <p className="text-xs text-teal-300 mt-4">Free to apply · Open to students and recent graduates</p>
