@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import { Instagram, Youtube, Linkedin } from 'lucide-react';
 
 const BG_IMAGES = [
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80",
-  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1800&q=80",
-  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1800&q=80",
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1800&q=80",
+  "https://media.base44.com/images/public/69b84f0f01a311431532ce14/7174e6de7_Robertantonphoto-7791.jpg",
+  "https://media.base44.com/images/public/69b84f0f01a311431532ce14/7a97a8e3c_25NovFOTBarcelona79.jpg",
+  "https://media.base44.com/images/public/69b84f0f01a311431532ce14/ca1e9810a_Robertantonphoto-7687.jpg",
+  "https://media.base44.com/images/public/69b84f0f01a311431532ce14/bd2fea283_Robertantonphoto-7754.jpg",
+  "https://media.base44.com/images/public/69b84f0f01a311431532ce14/fb2821b8a_25NovFOTBarcelona56.jpg",
 ];
 
 const PARTNERS = [
