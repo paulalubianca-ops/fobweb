@@ -65,10 +65,10 @@ const SECTIONS = [
     cta: 'Contact Us',
     ctaLink: 'mailto:partnerships@friendsofbata.com',
     external: true,
-    accent: 'from-rose-50 to-orange-50',
-    border: 'border-rose-200',
-    iconBg: 'bg-rose-100 text-rose-600',
-    activeTab: 'bg-rose-500 text-white border-rose-500',
+    accent: 'from-teal-50 to-cyan-50',
+    border: 'border-teal-200',
+    iconBg: 'bg-teal-100 text-teal-600',
+    activeTab: 'bg-teal-600 text-white border-teal-600',
   },
 ];
 
