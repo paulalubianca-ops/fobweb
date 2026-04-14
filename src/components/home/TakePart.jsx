@@ -31,40 +31,40 @@ export default function TakePart() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-md">
-          {UPCOMING_EVENTS.map((event, i) => (
-            <motion.div
-              key={event.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all"
-            >
-              <div className="aspect-video overflow-hidden relative">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                {i === 0 && (
-                  <span className="absolute top-3 left-3 bg-teal-500 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
-                    Coming Soon
-                  </span>
-                )}
-              </div>
-              <div className="p-6">
-                <p className="text-xs text-teal-600 font-medium mb-2 flex items-center gap-1">
-                  <MapPin className="w-3 h-3" />
-                  {event.location}
-                </p>
-                <h3 className="font-semibold text-teal-900 mb-2">{event.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{event.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {UPCOMING_EVENTS.map((event, i) => (
+          <motion.div
+            key={event.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className="group grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all"
+          >
+            {/* Image — left */}
+            <div className="relative overflow-hidden">
+              <img
+                src={event.image}
+                alt={event.title}
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 min-h-64"
+              />
+              {i === 0 && (
+                <span className="absolute top-3 left-3 bg-teal-500 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                  Coming Soon
+                </span>
+              )}
+            </div>
+            {/* Description — right */}
+            <div className="p-8 flex flex-col justify-center">
+              <p className="text-xs text-teal-600 font-medium mb-3 flex items-center gap-1">
+                <MapPin className="w-3 h-3" />
+                {event.location}
+              </p>
+              <h3 className="text-xl font-semibold text-teal-900 mb-3">{event.title}</h3>
+              <p className="text-sm text-slate-500 leading-relaxed">{event.description}</p>
+            </div>
+          </motion.div>
+        ))}
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
