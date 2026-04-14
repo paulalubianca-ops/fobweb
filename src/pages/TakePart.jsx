@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Building2, University, TrendingUp, ArrowRight, Megaphone } from 'lucide-react';
+import { Building2, University, ArrowRight, Megaphone } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -47,27 +47,7 @@ const SECTIONS = [
     iconBg: 'bg-blue-100 text-blue-600',
     activeTab: 'bg-blue-600 text-white border-blue-600',
   },
-  {
-    id: 'investors',
-    icon: TrendingUp,
-    label: 'Investors',
-    headline: 'Meet your next deal.',
-    description:
-      "Get early access to Gen Z founders building in Europe. Join our network and connect directly with ambitious entrepreneurs at the earliest stage — before they're on anyone's radar.",
-    details: [
-      'Curated deal flow from vetted Gen Z founders',
-      'Access to pitch sessions and demo days',
-      'Visibility in our investor-facing newsletter',
-      'Direct introductions to promising founders',
-      'Co-investment opportunities with our network',
-    ],
-    cta: 'Join the Network',
-    ctaLink: '/Apply',
-    accent: 'from-orange-50 to-yellow-50',
-    border: 'border-orange-200',
-    iconBg: 'bg-orange-100 text-orange-600',
-    activeTab: 'bg-orange-500 text-white border-orange-500',
-  },
+
   {
     id: 'sponsors',
     icon: Megaphone,
