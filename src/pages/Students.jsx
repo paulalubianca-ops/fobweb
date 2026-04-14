@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, Users, Mic, Calendar } from 'lucide-react';
 import ReviewsSection from '../components/shared/ReviewsSection';
+import PhotoGallery from '../components/shared/PhotoGallery';
 
 const BENEFITS = [
   { icon: BookOpen, title: "Case Studies & Masterclasses", desc: "Dive into real startup stories and frameworks from founders who've been in the trenches." },
@@ -104,6 +105,7 @@ export default function Students() {
         </div>
       </section>
 
+      <PhotoGallery variant="students" />
       <ReviewsSection bg="bg-gradient-to-br from-purple-50 via-white to-blue-50" />
 
       {/* Who it's for */}
