@@ -39,31 +39,57 @@ export default function PhotoGallery({ variant = "home" }) {
           </h2>
         </motion.div>
 
-        {/* Masonry-style grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {photos.map((photo, i) => (
-            <motion.button
-              key={photo.src}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.07 }}
-              onClick={() => setLightbox(photo)}
-              className={`relative overflow-hidden rounded-2xl group cursor-pointer ${
-                i === 0 ? 'row-span-2' : ''
-              }`}
-            >
-              <div className={`w-full ${i === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden`}>
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300 rounded-2xl" />
-            </motion.button>
-          ))}
+        {/* Gallery grid — two rows, no gaps/whitespace */}
+        <div className="grid grid-cols-3 grid-rows-2 gap-3" style={{ height: '560px' }}>
+          {/* Large left photo spanning 2 rows */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+            onClick={() => setLightbox(photos[0])}
+            className="relative overflow-hidden rounded-2xl group cursor-pointer row-span-2 col-span-1"
+          >
+            <img src={photos[0].src} alt={photos[0].alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300" />
+          </motion.button>
+
+          {/* Top middle */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.07 }}
+            onClick={() => setLightbox(photos[1])}
+            className="relative overflow-hidden rounded-2xl group cursor-pointer"
+          >
+            <img src={photos[1].src} alt={photos[1].alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300" />
+          </motion.button>
+
+          {/* Top right */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.14 }}
+            onClick={() => setLightbox(photos[2])}
+            className="relative overflow-hidden rounded-2xl group cursor-pointer"
+          >
+            <img src={photos[2].src} alt={photos[2].alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300" />
+          </motion.button>
+
+          {/* Bottom middle */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.21 }}
+            onClick={() => setLightbox(photos[3])}
+            className="relative overflow-hidden rounded-2xl group cursor-pointer"
+          >
+            <img src={photos[3].src} alt={photos[3].alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300" />
+          </motion.button>
+
+          {/* Bottom right */}
+          <motion.button
+            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.28 }}
+            onClick={() => setLightbox(photos[4])}
+            className="relative overflow-hidden rounded-2xl group cursor-pointer"
+          >
+            <img src={photos[4].src} alt={photos[4].alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-teal-900/0 group-hover:bg-teal-900/20 transition-colors duration-300" />
+          </motion.button>
         </div>
       </div>
 
