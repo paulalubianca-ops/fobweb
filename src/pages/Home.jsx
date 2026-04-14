@@ -3,6 +3,7 @@ import HeroSection from '../components/home/HeroSection';
 import ProblemSection from '../components/home/ProblemSection';
 import WhoWeAre from '../components/home/WhoWeAre';
 import TakePart from '../components/home/TakePart';
+import EventsSpotlight from '../components/home/EventsSpotlight';
 import HowItWorks from '../components/home/HowItWorks';
 import SocialProof from '../components/home/SocialProof';
 import ReviewsSection from '../components/shared/ReviewsSection';
@@ -16,6 +17,7 @@ export default function Home() {
       <ProblemSection />
       <WhoWeAre />
       <TakePart />
+      <EventsSpotlight />
       <HowItWorks />
       <SocialProof />
       <PhotoGallery variant="home" />
