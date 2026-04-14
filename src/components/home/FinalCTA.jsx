@@ -25,7 +25,7 @@ export default function FinalCTA() {
             </span>
           </h2>
           <p className="text-lg text-teal-100 leading-relaxed mb-4 max-w-xl mx-auto">
-            Whether you're building your first prototype or scaling a bold idea — we're here to help you test, grow, and connect.
+            Whether you're curious about entrepreneurship or already building your first idea — we're here to help you explore, connect, and grow.
           </p>
           <p className="text-base text-teal-200/70 leading-relaxed mb-10 max-w-xl mx-auto">
             Get in touch and participate in our upcoming events, submit your startup, or just say hi. Let's build something together!
