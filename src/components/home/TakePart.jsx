@@ -15,7 +15,7 @@ const UPCOMING_EVENTS = [
 
 export default function TakePart() {
   return (
-    <section className="py-12 bg-gradient-to-br from-blue-50 via-white to-purple-50" aria-labelledby="next-event-heading">
+    <section className="py-24 bg-gradient-to-br from-blue-50 via-white to-purple-50" aria-labelledby="next-event-heading">
       <div className="max-w-6xl mx-auto px-6">
 
         <motion.div
