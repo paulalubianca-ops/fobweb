@@ -11,20 +11,6 @@ const UPCOMING_EVENTS = [
       'A full-day, hands-on entrepreneurship experience for Gen Z builders. Pitch live, get feedback from real founders, and leave with new connections and sharper ideas.',
     image: 'https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69c668f5d0797c2eae3bbbcf_7575.JPG',
   },
-  {
-    title: 'FoB × University Innovation Sprint',
-    location: 'Coming Soon',
-    description:
-      'Friends of Bata is partnering with a leading European university for a 24-hour innovation sprint — bringing students, mentors, and real startup challenges together.',
-    image: 'https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69aeccd6865322352d600c93_1772567922553.jpeg',
-  },
-  {
-    title: 'From Case Study to Founder: Live Session',
-    location: 'Online',
-    description:
-      'Students explore a curated FoB case study and then meet the founder live — challenging, questioning, and diving deep into what it really takes to build a company.',
-    image: 'https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6995d68bdc0fbdf6d741f323_Screenshot%202026-02-18%20at%2016.00.58.png',
-  },
 ];
 
 export default function TakePart() {
@@ -45,7 +31,7 @@ export default function TakePart() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-md">
           {UPCOMING_EVENTS.map((event, i) => (
             <motion.div
               key={event.title}
