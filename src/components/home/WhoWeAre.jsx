@@ -13,7 +13,7 @@ const TABS = [
     stats: [
       { value: '130K+', label: 'Students supported globally' },
       { value: '30+', label: 'Universities active' },
-      { value: '5+', label: 'Countries represented' },
+      { value: '20+', label: 'Countries represented' },
     ],
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
   },
