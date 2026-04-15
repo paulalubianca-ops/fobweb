@@ -47,7 +47,7 @@ export default function EventsSpotlight() {
             <h2 id="events-heading" className="text-3xl md:text-4xl font-bold tracking-tight text-teal-900 mb-5">
               The rooms you actually want to be in.
             </h2>
-            <p className="text-slate-500 text-lg leading-relaxed mb-6">Not another conference. Not a generic networking event. FoB runs hands-on experiences — sprints, masterclasses, and workshops — designed specifically for curious minds like yours
+            <p className="text-slate-500 text-lg leading-relaxed mb-6">Not another conference. Not a generic networking event. FoB runs hands-on experiences — sprints, masterclasses, and workshops — designed specifically for curious minds like yours. 
 
 
             </p>
