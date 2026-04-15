@@ -51,7 +51,7 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">ABOUT FoB</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-5">
-              The Guidance Gen-Z Founders{' '}
+              The Guidance Gen-Z{' '}
               <span className="text-teal-600">Actually Need.</span>
             </h1>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">Friends of Bata bridges the gap between academia and the startup world — connecting Gen Z with real mentors, real networks, and real context.
