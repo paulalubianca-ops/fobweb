@@ -4,34 +4,34 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Mic, Users, Lightbulb, ExternalLink } from 'lucide-react';
 
 const EPISODES = [
-  {
-    title: "From Idea to First Customer",
-    guest: "Adrian Escabias",
-    guestRole: "Co-Founder, Funding Place",
-    desc: "How to validate fast, sell before you build, and get your first paying customer without a big team.",
-    image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/68fb658568ea682a3016f973_1755240065083.jpeg",
-  },
-  {
-    title: "Building in Web3: Lessons from Yoseyomo",
-    guest: "Yoseyomo Co-Founder",
-    guestRole: "Web3 Startup Founder",
-    desc: "A candid look at building a decentralized product, navigating the hype, and finding real users.",
-    image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6995d68bdc0fbdf6d741f323_Screenshot%202026-02-18%20at%2016.00.58.png",
-  },
-  {
-    title: "Fundraising Without the Fancy Network",
-    guest: "Gianluca Pontoni",
-    guestRole: "Venture Capital, Lead The Future",
-    desc: "What investors actually look for at early stage — and how to approach them when you don't have warm intros.",
-    image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/670fc29723ef285fa7f10675_1687500661037.jpeg",
-  },
-];
+{
+  title: "From Idea to First Customer",
+  guest: "Adrian Escabias",
+  guestRole: "Co-Founder, Funding Place",
+  desc: "How to validate fast, sell before you build, and get your first paying customer without a big team.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/68fb658568ea682a3016f973_1755240065083.jpeg"
+},
+{
+  title: "Building in Web3: Lessons from Yoseyomo",
+  guest: "Yoseyomo Co-Founder",
+  guestRole: "Web3 Startup Founder",
+  desc: "A candid look at building a decentralized product, navigating the hype, and finding real users.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6995d68bdc0fbdf6d741f323_Screenshot%202026-02-18%20at%2016.00.58.png"
+},
+{
+  title: "Fundraising Without the Fancy Network",
+  guest: "Gianluca Pontoni",
+  guestRole: "Venture Capital, Lead The Future",
+  desc: "What investors actually look for at early stage — and how to approach them when you don't have warm intros.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/670fc29723ef285fa7f10675_1687500661037.jpeg"
+}];
+
 
 const PILLARS = [
-  { icon: Mic, title: "Real Conversations", desc: "Unscripted chats with founders and operators who've been in the trenches." },
-  { icon: Users, title: "For Gen Z Builders", desc: "Every episode is designed for students and early-stage founders — not corporate leaders." },
-  { icon: Lightbulb, title: "Actionable Takeaways", desc: "Each episode ends with concrete things you can do this week to move forward." },
-];
+{ icon: Mic, title: "Real Conversations", desc: "Unscripted chats with founders and operators who've been in the trenches." },
+{ icon: Users, title: "For Gen Z Builders", desc: "Every episode is designed for students and early-stage founders — not corporate leaders." },
+{ icon: Lightbulb, title: "Actionable Takeaways", desc: "Each episode ends with concrete things you can do this week to move forward." }];
+
 
 export default function Podcast() {
   return (
@@ -54,8 +54,8 @@ export default function Podcast() {
                 href="https://www.friendsofbata.org/pitch-lab-podcast"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-7 py-3 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
-              >
+                className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-7 py-3 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm">
+                
                 Listen Now
                 <ExternalLink className="w-4 h-4" />
               </a>
@@ -68,22 +68,22 @@ export default function Podcast() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {PILLARS.map((p, i) => (
-              <motion.div
-                key={p.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100"
-              >
+            {PILLARS.map((p, i) =>
+            <motion.div
+              key={p.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100">
+              
                 <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-5">
                   <p.icon className="w-5 h-5 text-teal-600" />
                 </div>
                 <h3 className="font-semibold mb-2 text-teal-900">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{p.desc}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -97,15 +97,15 @@ export default function Podcast() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {EPISODES.map((ep, i) => (
-              <motion.div
-                key={ep.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all"
-              >
+            {EPISODES.map((ep, i) =>
+            <motion.div
+              key={ep.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all">
+              
                 <div className="aspect-video overflow-hidden">
                   <img src={ep.image} alt={ep.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
@@ -115,21 +115,21 @@ export default function Podcast() {
                   <p className="text-sm text-slate-500 leading-relaxed">{ep.desc}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-10 text-center"
-          >
+            className="mt-10 text-center">
+            
             <a
               href="https://www.friendsofbata.org/pitch-lab-podcast"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-800 text-sm font-semibold transition-colors"
-            >
+              className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-800 text-sm font-semibold transition-colors">
+              
               See all episodes
               <ArrowRight className="w-4 h-4" />
             </a>
@@ -143,14 +143,14 @@ export default function Podcast() {
           <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-3">Want to be featured?</h2>
           <p className="text-slate-500 mb-8">Building something interesting? We'd love to have you on the show.</p>
           <Link
-            to="/Apply"
-            className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"
-          >
-            Apply to Join FoB
-            <ArrowRight className="w-4 h-4" />
+            to="/Apply" className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20 text-sm"> Join FoB!
+
+
+
+
           </Link>
         </div>
       </section>
-    </>
-  );
+    </>);
+
 }
