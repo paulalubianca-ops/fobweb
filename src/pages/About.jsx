@@ -54,7 +54,7 @@ export default function About() {
               The Guidance Gen-Z Founders{' '}
               <span className="text-teal-600">Actually Need.</span>
             </h1>
-            <p className="text-lg text-slate-500 max-w-xl leading-relaxed">Friends of Bata bridges the gap between academia and the startup world — connecting Gen Z entre with real mentors, real networks, and real context.
+            <p className="text-lg text-slate-500 max-w-xl leading-relaxed">Friends of Bata bridges the gap between academia and the startup world — connecting Gen Z with real mentors, real networks, and real context.
 
 
             </p>
