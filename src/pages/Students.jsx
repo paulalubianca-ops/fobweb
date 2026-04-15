@@ -29,7 +29,7 @@ export default function Students() {
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">FOR STUDENTS</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               The community built for{' '}
-              <span className="text-teal-600"> The Next</span>
+              <span className="text-teal-600"> The Next-Gen </span>
             </h1>
             <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-10">
               Whether you have an idea, a side project, or just the ambition — FoB gives you the access, context, and community you won't find anywhere else.
