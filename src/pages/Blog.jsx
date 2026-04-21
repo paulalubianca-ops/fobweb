@@ -5,12 +5,12 @@ import { ArrowRight, Clock, User } from 'lucide-react';
 
 const POSTS = [
   {
-    title: 'Why Gen Z Founders Are Rethinking the Traditional VC Path',
+    title: 'Why Next Gen Founders Are Rethinking the Traditional VC Path',
     author: 'Valentina Muller',
     date: 'April 2026',
     readTime: '5 min read',
-    tags: ['Fundraising', 'Gen Z'],
-    desc: 'More and more young founders are questioning whether raising venture capital is the right move — and choosing alternative paths to building sustainable businesses.',
+    tags: ['Fundraising', 'Next Gen'],
+    desc: 'More and more Next Gen founders are questioning whether raising venture capital is the right move — and choosing alternative paths to building sustainable businesses.',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80',
   },
   {
@@ -60,7 +60,7 @@ export default function Blog() {
               <span className="text-teal-600">builders like you.</span>
             </h1>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
-              Founder stories, ecosystem deep-dives, and practical playbooks — written by and for the FoB community.
+              Founder stories, ecosystem deep-dives, and practical playbooks — written by and for the Next Gen FoB community.
             </p>
           </motion.div>
         </div>

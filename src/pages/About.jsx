@@ -51,10 +51,10 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">ABOUT FoB</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-5">
-              The Guidance Gen-Z Founders{' '}
+              The Guidance the Next Gen Founders{' '}
               <span className="text-teal-600">Actually Needs.</span>
             </h1>
-            <p className="text-lg text-slate-500 max-w-xl leading-relaxed">Friends of Bata bridges the gap between academia and the startup world — connecting Gen Z with real mentors, real networks, and real context.
+            <p className="text-lg text-slate-500 max-w-xl leading-relaxed">Friends of Bata bridges the gap between academia and the startup world — connecting the Next Gen with real mentors, real networks, and real context.
 
 
             </p>
@@ -74,7 +74,7 @@ export default function About() {
               
               <h2 className="text-3xl font-bold tracking-tight text-teal-900 mb-4">Our thesis is simple.</h2>
               <p className="text-slate-500 leading-relaxed mb-4">
-                Gen Z is the most entrepreneurial generation in history — but the infrastructure hasn't caught up. 
+                The Next Gen is the most entrepreneurial generation in history — but the infrastructure hasn't caught up. 
                 Accelerators want traction. Universities teach theory. Networking events aren't built for you.
               </p>
               <p className="text-slate-700 font-medium leading-relaxed">

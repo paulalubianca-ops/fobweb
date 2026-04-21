@@ -8,9 +8,9 @@ const SECTIONS = [
     id: 'organizations',
     icon: Building2,
     label: 'Organizations',
-    headline: 'Plug into the next generation.',
+    headline: 'Plug into the Next Gen.',
     description:
-      'Partner with FoB to bring entrepreneurship programs to your teams, sponsor events, or co-create content with our community of Gen Z founders across Europe.',
+      'Partner with FoB to bring entrepreneurship programs to your teams, sponsor events, or co-create content with our community of Next Gen founders across Europe.',
     details: [
       'Custom partnership packages',
       'Brand visibility across events and content',
@@ -52,9 +52,9 @@ const SECTIONS = [
     id: 'sponsors',
     icon: Megaphone,
     label: 'Sponsor Our Events',
-    headline: 'Put your brand at the heart of Gen Z entrepreneurship.',
+    headline: 'Put your brand at the heart of Next Gen entrepreneurship.',
     description:
-      'Our events bring together the most ambitious Gen Z founders in Europe. Sponsoring a FoB event means direct, authentic access to a highly engaged audience of builders and future leaders.',
+      'Our events bring together the most ambitious Next Gen founders in Europe. Sponsoring a FoB event means direct, authentic access to a highly engaged audience of builders and future leaders.',
     details: [
       'Logo placement across all event materials',
       'Speaking slot or panel participation',

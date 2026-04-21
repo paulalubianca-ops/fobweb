@@ -45,7 +45,7 @@ export default function Resources() {
               <span className="text-teal-600">to build smarter.</span>
             </h1>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
-              Case studies, masterclasses, and insights — curated for the next generation of European entrepreneurs.
+              Case studies, masterclasses, and insights — curated for the Next Gen of European entrepreneurs.
             </p>
           </motion.div>
         </div>

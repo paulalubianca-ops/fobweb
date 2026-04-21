@@ -49,7 +49,7 @@ export default function Masterclasses() {
               <span className="text-teal-600">who've been there.</span>
             </h1>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
-              Structured sessions with operators, investors, and founders — covering everything a Gen Z builder needs to know.
+              Structured sessions with operators, investors, and founders — covering everything a Next Gen builder needs to know.
             </p>
           </motion.div>
         </div>

@@ -8,7 +8,7 @@ import PhotoGallery from '../components/shared/PhotoGallery';
 const BENEFITS = [
 { icon: BookOpen, title: "Case Studies & Masterclasses", desc: "Dive into real startup stories and frameworks from founders who've been in the trenches." },
 { icon: Users, title: "Mentorship Access", desc: "Get matched with vetted operators and investors who help you navigate your specific challenge." },
-{ icon: Mic, title: "Podcast & Content", desc: "Learn on the go with our Pitch Lab podcast and curated content built for Gen Z builders." },
+{ icon: Mic, title: "Podcast & Content", desc: "Learn on the go with our Pitch Lab podcast and curated content built for Next Gen builders." },
 { icon: Calendar, title: "Events & Networking", desc: "Join exclusive events, workshops, and meetups across Europe to expand your ecosystem." }];
 
 
@@ -29,7 +29,7 @@ export default function Students() {
             <p className="text-teal-600 text-sm font-semibold tracking-wide mb-3">FOR STUDENTS</p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-teal-900 mb-6">
               The community built for{' '}
-              <span className="text-teal-600">The Next-Gen of Entrepreneurs. </span>
+              <span className="text-teal-600">the Next Gen of Entrepreneurs. </span>
             </h1>
             <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-10">
               Whether you have an idea, a side project, or just the ambition — FoB gives you the access, context, and community you won't find anywhere else.
@@ -117,7 +117,7 @@ export default function Students() {
               You don't need to be a founder. You just need to be curious.
             </h2>
             <p className="text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
-              FoB is open to Gen Z students and recent graduates across Europe who are curious about entrepreneurship and ready to take the first step. We meet you where you are.
+              FoB is open to Next Gen students and recent graduates across Europe who are curious about entrepreneurship and ready to take the first step. We meet you where you are.
             </p>
             <Link
               to="/Apply"
