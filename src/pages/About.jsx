@@ -9,14 +9,16 @@ const TEAM = [
   role: "Co-Founder",
   bio: "CEO and Founder at MGG and TripleB International. Co-Founder and Chairman of INTENNSE tennis and Friends of Bata. Investor. Sports and entrepreneurship enthusiast.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e14b53e70ed64f2bad1b3_1634207577445.jpeg",
-  linkedin: "https://www.linkedin.com/in/thomasabata/"
+  linkedin: "https://www.linkedin.com/in/thomasabata/",
+  objectPos: "object-center"
 },
 {
   name: "Friederike Feige",
   role: "Co-Founder & Partnership Lead",
   bio: "Co-founder and Partnership Lead, helping expand our network of partners, while organizing and leading both online and in-person educational sessions.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e1b24f9008eab89affebb_WhatsApp%20Image%202025-10-27%20at%2014.40.21.jpeg",
-  linkedin: "https://www.linkedin.com/in/friederike-feige-94a06153/"
+  linkedin: "https://www.linkedin.com/in/friederike-feige-94a06153/",
+  objectPos: "object-center"
 },
 {
   name: "Valentina Muller",
@@ -58,7 +60,8 @@ const TEAM = [
   role: "Program Manager Assistant",
   bio: "Supporting all platform events and enhancing stakeholder experiences.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69c3b834561dd254508739b4_1770471321941.jpeg",
-  linkedin: "https://www.linkedin.com/in/paula-nascimento-lubianca/"
+  linkedin: "https://www.linkedin.com/in/paula-nascimento-lubianca/",
+  objectPos: "object-center"
 },
 {
   name: "Heinrich Homola",
@@ -205,7 +208,7 @@ export default function About() {
               className="group rounded-2xl overflow-hidden bg-white border border-purple-100 shadow-sm">
               
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
+                  <img src={member.image} alt={member.name} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${member.objectPos || 'object-top'}`} />
                 </div>
                 <div className="p-5">
                   <h3 className="font-semibold text-teal-900">{member.name}</h3>
