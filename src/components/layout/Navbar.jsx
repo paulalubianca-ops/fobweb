@@ -12,6 +12,8 @@ const NAV_LINKS = [
       { label: 'Experts', path: '/Experts' },
     ],
   },
+  { label: 'Podcast', path: '/Podcast' },
+  { label: 'Take Part', path: '/TakePart' },
   {
     label: 'Resources',
     dropdown: [
@@ -20,8 +22,6 @@ const NAV_LINKS = [
       { label: 'Blog', path: '/Resources/Blog' },
     ],
   },
-  { label: 'Podcast', path: '/Podcast' },
-  { label: 'Take Part', path: '/TakePart' },
 ];
 
 function DropdownItem({ link, scrolled }) {
