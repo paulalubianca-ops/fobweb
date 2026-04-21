@@ -7,23 +7,65 @@ const TEAM = [
 {
   name: "Thomas Archer Bata",
   role: "Co-Founder",
-  bio: "Investor & entrepreneur. CEO at MGG and TripleB International.",
+  bio: "CEO and Founder at MGG and TripleB International. Co-Founder and Chairman of INTENNSE tennis and Friends of Bata. Investor. Sports and entrepreneurship enthusiast.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e14b53e70ed64f2bad1b3_1634207577445.jpeg",
   linkedin: "https://www.linkedin.com/in/thomasabata/"
 },
 {
   name: "Friederike Feige",
   role: "Co-Founder & Partnership Lead",
-  bio: "Builds our partner network and leads educational sessions across Europe.",
+  bio: "Co-founder and Partnership Lead, helping expand our network of partners, while organizing and leading both online and in-person educational sessions.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e1b24f9008eab89affebb_WhatsApp%20Image%202025-10-27%20at%2014.40.21.jpeg",
   linkedin: "https://www.linkedin.com/in/friederike-feige-94a06153/"
 },
 {
   name: "Valentina Muller",
-  role: "Co-founder & Progran Lead",
-  bio: "Drives vision, content, and the Pitch Lab podcast.",
+  role: "Platform Lead",
+  bio: "Platform & Project Lead at Friends of Bata. Redesigned FoB's vision, mission and strategy. Manages content, events, student engagement, and produces the Pitch Lab podcast.",
   image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e157a625f6400be8b40d9_1694598221628%20(1).jpeg",
   linkedin: "https://www.linkedin.com/in/valentinamueller/"
+},
+{
+  name: "Adrian Escabias",
+  role: "Advisor & Ambassador",
+  bio: "Main advisor and ambassador for Friends of Bata in Spain.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/68fb658568ea682a3016f973_1755240065083.jpeg",
+  linkedin: "https://www.linkedin.com/in/adrian-escabias/"
+},
+{
+  name: "Enrique Alvarado Hablützel",
+  role: "Advisor & Ambassador",
+  bio: "Main advisor and ambassador of Friends of Bata in Switzerland.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/690e1610c3176d141ac2030e_1761557015776.jpeg",
+  linkedin: "https://www.linkedin.com/in/enrique-alvarado-hablutzel/"
+},
+{
+  name: "Frédéric Jaquet",
+  role: "Digital Strategy Manager",
+  bio: "Managing our digital strategy and its implementation throughout the entire ecosystem.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/6983637da4873b28a14e0951_1756912373620.jpeg",
+  linkedin: "https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-jaquet-610b95188/"
+},
+{
+  name: "James Beirao Simoes",
+  role: "Podcast Technical Producer",
+  bio: "Podcast expert leading all podcast recording, editing, distribution, and more.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/698360dcfa19db1fdcdd2cb9_1.png",
+  linkedin: "https://www.linkedin.com/in/james-beirao-simoes-55b872151/"
+},
+{
+  name: "Paula Lubianca",
+  role: "Program Manager Assistant",
+  bio: "Supporting all platform events and enhancing stakeholder experiences.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/69c3b834561dd254508739b4_1770471321941.jpeg",
+  linkedin: "https://www.linkedin.com/in/paula-nascimento-lubianca/"
+},
+{
+  name: "Heinrich Homola",
+  role: "Advisor & Ambassador",
+  bio: "Main advisor and ambassador for Friends of Bata in Czech Republic & Slovakia.",
+  image: "https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/692719e2c1fb6047a41a7501_Screenshot%202025-11-26%20at%2016.16.45.png",
+  linkedin: "https://www.linkedin.com/in/heinrichhomola/"
 }];
 
 
