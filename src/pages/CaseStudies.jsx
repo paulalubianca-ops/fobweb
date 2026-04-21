@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
+import CaseStudyAccessModal from '../components/case-studies/CaseStudyAccessModal';
 
 const CASE_STUDIES = [
   {
@@ -94,6 +95,7 @@ const ALL_TAGS = ["All", ...Array.from(new Set(CASE_STUDIES.flatMap(cs => cs.tag
 
 export default function CaseStudies() {
   const [activeTag, setActiveTag] = useState("All");
+  const [selectedStudy, setSelectedStudy] = useState(null);
 
   const filtered = activeTag === "All"
     ? CASE_STUDIES
@@ -153,7 +155,8 @@ export default function CaseStudies() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: (i % 3) * 0.08 }}
-                className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all flex flex-col"
+                onClick={() => setSelectedStudy(cs)}
+                className="group rounded-2xl overflow-hidden bg-white border border-purple-100 hover:border-teal-200 shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer"
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -172,15 +175,13 @@ export default function CaseStudies() {
                   </div>
                   <h3 className="font-semibold text-teal-900 mb-2">{cs.name}</h3>
                   <p className="text-sm text-slate-500 leading-relaxed flex-1">{cs.desc}</p>
-                  <a
-                    href={cs.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => setSelectedStudy(cs)}
                     className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-teal-600 hover:text-teal-800 transition-colors"
                   >
                     <Download className="w-3.5 h-3.5" />
                     Download Case Study
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             ))}
@@ -202,6 +203,12 @@ export default function CaseStudies() {
           </Link>
         </div>
       </section>
+      {selectedStudy && (
+        <CaseStudyAccessModal
+          caseStudy={selectedStudy}
+          onClose={() => setSelectedStudy(null)}
+        />
+      )}
     </>
   );
 }
