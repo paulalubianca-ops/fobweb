@@ -37,7 +37,7 @@ const POSTS = [
     date: 'January 2026',
     readTime: '6 min read',
     tags: ['Community', 'Insights'],
-    desc: 'After running more than 50 events across Europe, here are the key patterns, surprises, and lessons we've learned about the next generation of founders.',
+    desc: "After running more than 50 events across Europe, here are the key patterns, surprises, and lessons we've learned about the next generation of founders.",
     image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80',
   },
 ];
