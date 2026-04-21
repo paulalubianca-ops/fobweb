@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Building2, University, ArrowRight, Megaphone } from 'lucide-react';
+import { Building2, University, ArrowRight, Megaphone, Zap } from 'lucide-react';
 
 const SECTIONS = [
   {
@@ -48,6 +48,28 @@ const SECTIONS = [
     activeTab: 'bg-blue-600 text-white border-blue-600',
   },
 
+  {
+    id: 'founders',
+    icon: Zap,
+    label: 'Early Stage Founders',
+    headline: 'Stress-test your idea with real Next Gen consumers.',
+    description:
+      'Building a product for Gen Z or Gen Alpha? Get direct access to our community of young founders and consumers to validate your idea, test messaging, and gather honest feedback before you scale.',
+    details: [
+      'Live feedback sessions with Gen Z & Gen Alpha',
+      'Concept and messaging validation',
+      'Focus groups and user testing facilitation',
+      'Insights report from our community',
+      'Access to FoB network of young founders',
+    ],
+    cta: 'Apply Now',
+    ctaLink: '/Apply',
+    external: false,
+    accent: 'from-orange-50 to-yellow-50',
+    border: 'border-orange-200',
+    iconBg: 'bg-orange-100 text-orange-600',
+    activeTab: 'bg-orange-500 text-white border-orange-500',
+  },
   {
     id: 'sponsors',
     icon: Megaphone,
