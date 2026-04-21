@@ -16,6 +16,9 @@ import CaseStudies from './pages/CaseStudies';
 import Experts from './pages/Experts';
 import Students from './pages/Students';
 import TakePart from './pages/TakePart';
+import Resources from './pages/Resources';
+import Masterclasses from './pages/Masterclasses';
+import Blog from './pages/Blog';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -48,6 +51,10 @@ const AuthenticatedApp = () => {
         <Route path="/TakePart" element={<TakePart />} />
         <Route path="/Podcast" element={<Podcast />} />
         <Route path="/CaseStudies" element={<CaseStudies />} />
+        <Route path="/Resources" element={<Resources />} />
+        <Route path="/Resources/CaseStudies" element={<CaseStudies />} />
+        <Route path="/Resources/Masterclasses" element={<Masterclasses />} />
+        <Route path="/Resources/Blog" element={<Blog />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

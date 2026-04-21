@@ -12,7 +12,14 @@ const NAV_LINKS = [
       { label: 'Experts', path: '/Experts' },
     ],
   },
-  { label: 'Case Studies', path: '/CaseStudies' },
+  {
+    label: 'Resources',
+    dropdown: [
+      { label: 'Case Studies', path: '/Resources/CaseStudies' },
+      { label: 'Masterclasses', path: '/Resources/Masterclasses' },
+      { label: 'Blog', path: '/Resources/Blog' },
+    ],
+  },
   { label: 'Podcast', path: '/Podcast' },
   { label: 'Take Part', path: '/TakePart' },
 ];
