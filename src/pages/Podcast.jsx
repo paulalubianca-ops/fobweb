@@ -5,12 +5,6 @@ import { ArrowRight, Mic, Users, Lightbulb, ExternalLink, Play } from 'lucide-re
 
 const EPISODES = [
   {
-    title: "Masterclass | What NOT to do as a Founder 🚫 (Top 5 Startup Killers Explained)",
-    duration: "22:12",
-    link: "https://www.youtube.com/watch?v=tX0136Sof80",
-    thumb: "https://i.ytimg.com/vi/tX0136Sof80/hqdefault.jpg",
-  },
-  {
     title: "E006 | Pitch Lab | Pivoting go to market: From product to profit",
     duration: "47:29",
     link: "https://www.youtube.com/watch?v=xg7M3rrf8_o",

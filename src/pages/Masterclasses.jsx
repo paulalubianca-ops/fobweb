@@ -5,6 +5,12 @@ import { ArrowRight, Play } from 'lucide-react';
 
 const VIDEOS = [
   {
+    title: 'Masterclass | What NOT to do as a Founder 🚫 (Top 5 Startup Killers Explained)',
+    tags: ['Entrepreneurship', 'Education'],
+    image: 'https://i.ytimg.com/vi/tX0136Sof80/hqdefault.jpg',
+    link: 'https://www.youtube.com/watch?v=tX0136Sof80',
+  },
+  {
     title: 'How to Teach Using Case Studies',
     tags: ['Education', 'Case Studies'],
     image: 'https://cdn.prod.website-files.com/6552207d5f7b80924e9ed85f/686fc05e99e8177886735fc8_686fbe493e37762cf49c3617_Screenshot%202025-07-08%20at%2012.02.12.png',
